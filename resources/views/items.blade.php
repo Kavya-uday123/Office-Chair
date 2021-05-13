@@ -170,30 +170,40 @@ function cartinsert(itemid,j)
     </section>
     <form action="" method="post" enctype="multipart/form-data">
 {{ csrf_field() }}
-      <div class="row row-cols-1 row-cols-md-4 lg-4">
+      <!-- <div class="row row-cols-1 row-cols-md-4 lg-4"> -->
+      <table align="center" cellpadding="15" cellspacing="15">
 <?php
       $i=0;$j=0;
      if(isset($data))
     {
     foreach($data as $chair)
     {
-        $i++;$j++;
+        $i++;$j++; 
+        if($i==1) { ?><tr ><?php }
 ?>
-  <div class="col">
-    <div class="card">
+  
+    <td><div  class="card">
     <img src="..\Images\<?php  echo $chair->chair_img?>"  class="card-img-top" height="200" width="200">
       <div class="card-body">
         <h5 class="card-title"><?php  echo $chair->chair_name ?> </h5>
         <p class="card-text"><?php  echo $chair->chair_desc ?></p>
         <a href="#" class="btn btn-warning" onClick="cartinsert(<?php echo $chair->chair_id; ?>,<?php echo $j; ?>)" >Add to Cart</a>
-    </div>
-    </div>
-  </div>
+    </div></div>
+    </td>
+  
   <?php
+  if($i==4)
+  {
+      ?>
+     
+      </tr>
+      <?php
+      $i=0;
+  }
 }
     }
 ?>
-
+</table>
 
   <!-- <div class="col">
     <div class="card">
@@ -427,7 +437,7 @@ function cartinsert(itemid,j)
     </div>
   </div> -->
   </form>
-</div>
+<!-- </div> -->
 <footer class="footer_part">
         <div class="container">
             <div class="row justify-content-around">
