@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body background="https://cdn.thewirecutter.com/wp-content/media/2020/09/officechairs-2048px-9607.jpg?auto=webp&quality=60&crop=1.91:1&width=1200">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="/chairadd">Add</a>

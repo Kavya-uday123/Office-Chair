@@ -12,14 +12,11 @@ class ChairController extends Controller
         $desc=$req->cdes; 
         $qty=$req->cqty;
         $rate=$req->crate; 
-
         $photo=$req->cfile;
         $destination=public_path().'\Images';
         $photo->move($destination,$photo->getClientOriginalName());
-
         if(isset($_POST["submit"]))
-        {
-            $inQ=ChairModel::InsertData($name,$desc,$qty,$rate,$photo);
+        {   $inQ=ChairModel::InsertData($name,$desc,$qty,$rate,$photo);
             return redirect('/chairadd');
         }
        

@@ -205,21 +205,23 @@
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-home"></i></span>
             <div class="media-body">
-              <h3>Buttonwood, California.</h3>
-              <p>Rosemead, CA 91770</p>
+              <h3>Street:837, 3 Nehru Road, Beml Lyt, Rajarajeshwari Nagar, Ernakulam, Kerala</h3>
+              <p>Phone number  2598374</p>
+              <p>Zip code  683038</p>
+              <p>Country calling code  +91</p>Country  India</p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
             <div class="media-body">
-              <h3>00 (440) 9865 562</h3>
+              <h3>91-9865 562 310</h3>
               <p>Mon to Fri 9am to 6pm</p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-email"></i></span>
             <div class="media-body">
-              <h3>support@colorlib.com</h3>
+              <h3>aranozchairs@gmail.com</h3>
               <p>Send us your query anytime!</p>
             </div>
           </div>

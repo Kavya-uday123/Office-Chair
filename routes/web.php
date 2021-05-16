@@ -8,6 +8,7 @@ use App\Http\Controllers\MyProfileController;
 use App\Http\Controllers\SearchChair;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\UserReportController;
 use App\Http\Controllers\LogoutController;
 
 /*
@@ -148,7 +149,13 @@ Route::get('/checkout',[CartController::class,'ViewOrder']);
 Route::post('/checkout',[OrderController::class,'InsertOrder']);
 
 
-Route::get('/confirmation',[OrderController::class,'ViewBill']);
-//Route::get('/confirmation',[CartController::class,'ViewOrderDetails']);
+// Route::get('/confirmation',[OrderController::class,'ViewBill']);
+
+ Route::get('/confirmation',[OrderController::class,'ViewOrderDetails']);
+
+Route::get('/UsersReport',[UserReportController::class,'ViewUsers']);
+
+Route::get('/CompletedOrders',[OrderController::class,'ViewAllOrderDetails']);
+
 Route::get('/signup',[ChairControllerlog::class,'create'] );
 Route::post('/signup',[ChairControllerlog::class,'store']);

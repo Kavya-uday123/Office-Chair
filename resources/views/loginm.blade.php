@@ -31,9 +31,9 @@
                         <td><input type="password" name="Password" class="form-control"></td>
                     </tr>
                     <tr>
-                       
+                       <td></td>
                         <!-- <td><button class="btn btn-success" onclick="location.href='{{ url('/chairadd') }}'">Login</button> -->
-                        <td colspan=2>  <button class="btn btn-success" type="submit" value="submit" class="btn_3">Login</button></td>
+                        <td>  <button class="btn btn-success" type="submit" value="submit" class="btn_3">Login</button></td></tr>
                 </table>
                 </form>
             </div>

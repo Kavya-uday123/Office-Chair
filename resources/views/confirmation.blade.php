@@ -24,6 +24,11 @@
     <link rel="stylesheet" href="<?php echo url('/'); ?>/css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="<?php echo url('/'); ?>/css/style.css">
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
 </head>
 
 <body>
@@ -171,14 +176,14 @@
           </div>
         </div>
         <?php
-                //  $j1=0;$t=0;
-                //  if(isset($data)){
-                //      foreach ($data as $row){
-                //          $j1=$j1+$row->Payment;
-                        
-                //      }
-                //      $t=$j1+50;
-                //     }
+                $t=0;
+if(isset($data)){
+    foreach ($data as $row){
+        $t=$t+$row->Payment;
+    }}
+        ?>
+        <?php
+                
 if(isset($data1)){
     foreach ($data1 as $row1){
       
@@ -203,7 +208,7 @@ if(isset($data1)){
                 <p>date</p><span>: <?php echo date('Y-m-d')?></span>
               </li>
               <li>
-                <p>total</p><span>: <?php //echo $t;?></span>
+                <p>total</p><span>: <?php echo $t+50;?></span>
               </li>
               <li>
                 <p>mayment methord</p><span>: Check payments</span>
@@ -246,6 +251,7 @@ if(isset($data1)){
         </div>
       </div>
       <?php } } ?>
+      <br><br>
       <div class="row">
         <div class="col-lg-12">
           <div class="order_details_iner">
@@ -271,10 +277,10 @@ if(isset($data)){
                   <th colspan="2"><span><?php  echo $row->chair_name?></span></th>
                   <th>$<?php  echo $row->chair_rate?>.00</th>
                   <th>x<?php  echo $row->o_qty?></th>
-                  <th> <span>$<?php  echo $row->Payment?>.00</span></th>   <?php } } ?>
+                  <th> <span>$<?php  echo $row->Payment?>.00</span></th>  
 
                 </tr>
-             
+                <?php } } ?>
                 <tr>
                   <th colspan="4">Subtotal</th>
                   <th> <span>$<?php  echo $j?>.00</span></th>

@@ -18,11 +18,12 @@ class OrderController extends Controller
         $city=$req->city;
         $zip=$req->zip;
         $message=$req->message;
+        $no=$req->no;
       
         if(isset($_POST["btnpay"]))
         {
             $cid=$req->session()->get('cid');
-            $inQ=OrderModel::InsertOrder($name,$number,$email,$add1,$add2,$city,$zip,$message,$cid);
+            $inQ=OrderModel::InsertOrder($name,$number,$email,$add1,$add2,$city,$zip,$message,$cid,$no);
           
             $upQ=CartModel::UpdatePay($cid);
            // return redirect('/chairview');
@@ -35,11 +36,29 @@ class OrderController extends Controller
         }
        
     }
-    public function ViewBill(Request $req,$cid=null)
+    
+    public function ViewOrderDetails(Request $req,$cid=null)
     {
+
         $cid=$req->session()->get('cid');
-        $data=OrderModel::ViewBill($cid);
-        return view('/confirmation',['data1'=>$data]);
+        $dat=OrderModel::ViewBill($cid);
+        if(isset($dat))
+        {
+            foreach($dat as $dat1)
+            {
+                $no=$dat1->no;
+            }
+        }
+        $data=OrderModel::ViewOrderDetails($cid,$no);
+        return view('/confirmation',['data'=>$data,'data1'=>$dat]);
+       
+    }
+
+    public function ViewAllOrderDetails()
+    {
+       
+        $data=OrderModel::ViewAllOrderDetails();
+        return view('/CompletedOrders',['data'=>$data]);
        
     }
 }

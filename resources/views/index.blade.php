@@ -121,8 +121,7 @@
                                     <div class="banner_text">
                                         <div class="banner_text_iner">
                                             <h1>Office Furniture</h1>
-                                            <p>Incididunt ut labore et dolore magna aliqua quis ipsum
-                                                suspendisse ultrices gravida. Risus commodo viverra</p>
+                                            <p>Experts in Ergonomics, definers of space and passionate about design.</p>
                                          
                                         </div>
                                     </div>
@@ -137,8 +136,7 @@
                                     <div class="banner_text">
                                         <div class="banner_text_iner">
                                             <h1>Office Furniture</h1>
-                                            <p>Incididunt ut labore et dolore magna aliqua quis ipsum
-                                                suspendisse ultrices gravida. Risus commodo viverra</p>
+                                            <p>For the last five decades, aranoz has taken inspiration from contemporary aesthetic movements to re-imagine office spaces.</p>
                                          
                                         </div>
                                     </div>
@@ -153,8 +151,7 @@
                                     <div class="banner_text">
                                         <div class="banner_text_iner">
                                             <h1>Office Furniture</h1>
-                                            <p>Incididunt ut labore et dolore magna aliqua quis ipsum
-                                                suspendisse ultrices gravida. Risus commodo viverra</p>
+                                            <p>Leaders in innovation, we provide economic solutions to tackle the challenges faced in the modern office. Maintaining productivity, defining comfort at work, encouraging interaction.</p>
                                        
                                         </div>
                                     </div>
@@ -406,7 +403,7 @@
                             <input type="text" class="form-control" placeholder="enter email address"
                                 aria-label="Recipient's username" aria-describedby="basic-addon2">
                             <div class="input-group-append">
-                                <a href="#" class="input-group-text btn_2" id="basic-addon2">book now</a>
+                                <a href="/login" class="input-group-text btn_2" id="basic-addon2">book now</a>
                             </div>
                         </div>
                     </div>

@@ -26,6 +26,11 @@
     <link rel="stylesheet" href="<?php echo url('/'); ?>/css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="<?php echo url('/'); ?>/css/style.css">
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
 </head>
 <body>
   <!--::header part start::-->
@@ -288,10 +293,11 @@
                   </a>
                 </li>
                 <?php
-                $j=0;
+                $j=0;$no=0;
 if(isset($data)){
     foreach ($data as $row){
         $j=$j+$row->Payment;
+        $no++;
         ?>
                 <li>
                   <a href="#"><?php  echo $row->chair_name?>
@@ -317,7 +323,7 @@ if(isset($data)){
                     <span>$<?php  echo $j+50;?>.00</span>
                   </a>
                 </li>
-              </ul>
+              </ul> <input type="hidden"  name="no" value=<?php echo $no;?> />
               <div class="payment_item">
                 <div class="radion_btn">
                   <input type="radio" id="f-option5" name="selector" />

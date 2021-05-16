@@ -128,8 +128,7 @@ if(isset($Name))
 }
 ?> 
                                             <h1>Office Furniture</h1>
-                                            <p>Incididunt ut labore et dolore magna aliqua quis ipsum
-                                                suspendisse ultrices gravida. Risus commodo viverra</p>
+                                            <p>Experts in Ergonomics, definers of space and passionate about design.</p>
                                          
                                         </div>
                                     </div>
@@ -144,8 +143,7 @@ if(isset($Name))
                                     <div class="banner_text">
                                         <div class="banner_text_iner">
                                             <h1>Office Furniture</h1>
-                                            <p>Incididunt ut labore et dolore magna aliqua quis ipsum
-                                                suspendisse ultrices gravida. Risus commodo viverra</p>
+                                            <p>For the last five decades, aranoz has taken inspiration from contemporary aesthetic movements to re-imagine office spaces.</p>
                                          
                                         </div>
                                     </div>
@@ -160,8 +158,7 @@ if(isset($Name))
                                     <div class="banner_text">
                                         <div class="banner_text_iner">
                                             <h1>Office Furniture</h1>
-                                            <p>Incididunt ut labore et dolore magna aliqua quis ipsum
-                                                suspendisse ultrices gravida. Risus commodo viverra</p>
+                                            <p>Leaders in innovation, we provide economic solutions to tackle the challenges faced in the modern office. Maintaining productivity, defining comfort at work, encouraging interaction.</p>
                                        
                                         </div>
                                     </div>

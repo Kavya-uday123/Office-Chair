@@ -45,15 +45,5 @@ class CartModel extends Model
                   ->get();
         return $sel;
     }
-    public static function ViewOrderDetails($id)
-    {
-    $sel=DB::table('tbl_order_child')
-                  ->join('tbl_order_master','tbl_order_master.om_id','=','tbl_order_child.om_id')
-                  ->join('tbl_chair','tbl_chair.chair_id','=','tbl_order_master.chair_id')
-                  ->where('tbl_order_master.cust_id','=',$id)
-                  ->where('status','=',1)
-                  ->where('o_date','=',date('Y-m-d'))
-                  ->get();
-        return $sel;
-    }
+    
 }

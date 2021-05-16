@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\CartModel;
-use App\Models\OrderModel;
+
 use DB;
 class CartController extends Controller
 {
@@ -59,13 +59,7 @@ class CartController extends Controller
         return view('/checkout',['data'=>$data]);
        
     }
-    public function ViewOrderDetails(Request $req,$cid=null)
-    {
-        $cid=$req->session()->get('cid');
-        $data=CartModel::ViewOrderDetails($cid);
-        return view('/confirmation',['data'=>$data]);
-       
-    }
+   
     
       
 }

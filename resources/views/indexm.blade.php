@@ -496,7 +496,7 @@
 							<div class="flex-c-m p-t-44 p-t-30-xl">
 								<div class="flex-col-c-m size3 bo1 m-l-5 m-r-5">
 									<span class="m-text10 p-b-1 days">
-										69
+										10050
 									</span>
 
 									<span class="s-text5">

@@ -213,44 +213,7 @@ function cartdelete(itemid)
 
 <body  onload="getgtotal()" >
   <!--::header part start::-->
-  <header class="main_menu home_menu">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-12">
-                <!doctype html>
-<html lang="zxx">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>aranoz</title>
-    <link rel="icon" href="<?php echo url('/'); ?>/img/favicon.png">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/bootstrap.min.css">
-    <!-- animate CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/animate.css">
-    <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/owl.carousel.min.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/all.css">
-    <!-- flaticon CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/flaticon.css">
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/themify-icons.css">
-    <!-- font awesome CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/magnific-popup.css">
-    <!-- swiper CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/slick.css">
-    <!-- style CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/style.css">
-    <script>
-    function getlogin()
-    {
-        alert('Please login to purchase chair');
-        location.replace("/login");
-    }
-    </script>
-</head>
 
 <body>
     <!--::header part start::-->
