@@ -156,7 +156,7 @@
         <div class="col-lg-8">
           <div class="breadcrumb_iner">
             <div class="breadcrumb_iner_item">
-              <h2>Producta Checkout</h2>
+              <h2>Product Checkout</h2>
               <p>Home <span>-</span> Shop Single</p>
             </div>
           </div>
@@ -220,8 +220,7 @@
             <h3>Billing Details</h3>
             <form class="row contact_form" action="#" method="post" novalidate="novalidate">
               <div class="col-md-6 form-group p_star">
-                <input type="text" class="form-control" id="first" name="name" />
-                <span class="placeholder" data-placeholder="Name"></span>
+                <input type="text" class="form-control" id="first" name="name" placeholder="Name" />
               </div>
               <!-- <div class="col-md-6 form-group p_star">
                 <input type="text" class="form-control" id="last" name="name" />
@@ -229,12 +228,10 @@
               </div> -->
             
               <div class="col-md-6 form-group p_star">
-                <input type="text" class="form-control" id="number" name="number" />
-                <span class="placeholder" data-placeholder="Phone number"></span>
+                <input type="text" class="form-control" id="number" name="number" placeholder="Phone number" />
               </div>
               <div class="col-md-6 form-group p_star">
-                <input type="text" class="form-control" id="email" name="email" />
-                <span class="placeholder" data-placeholder="Email Address"></span>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email Address" />
               </div>
               <!-- <div class="col-md-12 form-group p_star">
                 <select class="country_select">
@@ -244,16 +241,14 @@
                 </select>
               </div> -->
               <div class="col-md-12 form-group p_star">
-                <input type="text" class="form-control" id="add1" name="add1" />
-                <span class="placeholder" data-placeholder="Address line 01"></span>
+                <input type="text" class="form-control" id="add1" name="add1" placeholder="Address line 01"/>
+             
               </div>
               <div class="col-md-12 form-group p_star">
-                <input type="text" class="form-control" id="add2" name="add2" />
-                <span class="placeholder" data-placeholder="Address line 02"></span>
+                <input type="text" class="form-control" id="add2" name="add2" placeholder="Address line 02" />
               </div>
               <div class="col-md-12 form-group p_star">
-                <input type="text" class="form-control" id="city" name="city" />
-                <span class="placeholder" data-placeholder="Town/City"></span>
+                <input type="text" class="form-control" id="city" name="city" placeholder="Town/City" />
               </div>
               <!-- <div class="col-md-12 form-group p_star">
                 <select class="country_select">
@@ -302,7 +297,7 @@ if(isset($data)){
                 <li>
                   <a href="#"><?php  echo $row->chair_name?>
                   <span class="middle">x <?php  echo $row->o_qty?></span>
-                    <span class="last">$<?php  echo $row->Payment?>.00</span>
+                    <span class="last">Rs <?php  echo $row->Payment?>.00</span>
                   </a>
                 </li>
                 <?php } } ?>
@@ -310,17 +305,17 @@ if(isset($data)){
               <ul class="list list_2">
                 <li>
                   <a href="#">Subtotal
-                    <span>$<?php  echo $j?>.00</span>
+                    <span>Rs <?php  echo $j?>.00</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">Shipping
-                    <span>Flat rate: $50.00</span>
+                    <span>Flat rate: Rs 50.00</span>
                   </a>
                 </li>
                 <li>
                   <a href="#">Total
-                    <span>$<?php  echo $j+50;?>.00</span>
+                    <span>Rs <?php  echo $j+50;?>.00</span>
                   </a>
                 </li>
               </ul> <input type="hidden"  name="no" value=<?php echo $no;?> />

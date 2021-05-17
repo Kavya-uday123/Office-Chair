@@ -275,26 +275,26 @@ if(isset($data)){
         ?>
                 <tr>
                   <th colspan="2"><span><?php  echo $row->chair_name?></span></th>
-                  <th>$<?php  echo $row->chair_rate?>.00</th>
+                  <th>Rs <?php  echo $row->chair_rate?>.00</th>
                   <th>x<?php  echo $row->o_qty?></th>
-                  <th> <span>$<?php  echo $row->Payment?>.00</span></th>  
+                  <th> <span>Rs <?php  echo $row->Payment?>.00</span></th>  
 
                 </tr>
                 <?php } } ?>
                 <tr>
                   <th colspan="4">Subtotal</th>
-                  <th> <span>$<?php  echo $j?>.00</span></th>
+                  <th> <span>Rs <?php  echo $j?>.00</span></th>
                 </tr>
                 <tr>
                   <th colspan="4">shipping</th>
-                  <th><span>flat rate: $50.00</span></th>
+                  <th><span>flat rate: Rs 50.00</span></th>
                 </tr>
               </tbody>
               <tfoot> 
                 <tr>
                   <th scope="col" colspan="3">Quantity</th>
                   <th scope="col" ><?php  echo $q;?></th>
-                  <th scope="col">$<?php  echo $j+50;?>.00</th>
+                  <th scope="col">Rs <?php  echo $j+50;?>.00</th>
                 </tr>
               </tfoot>
             </table>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body background="https://cdn.thewirecutter.com/wp-content/media/2020/09/officechairs-2048px-9607.jpg?auto=webp&quality=60&crop=1.91:1&width=1200">
+<body background="https://www.durian.in/blog/wp-content/uploads/2018/07/Featured-Image-2.jpg" height="100%" width="100%">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="/chairadd">Add</a>
@@ -22,9 +22,13 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/chairview">View</a>
               </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/chairdelete">Delete</a>
-              </li> -->
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/UsersReport">Registered Users</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/CompletedOrders">Completed Orders</a>
+              </li>
 </ul>
 <button class="btn btn-success btn-md float-end" onclick="location.href='{{ url('/') }}'">
      Logout</button>
