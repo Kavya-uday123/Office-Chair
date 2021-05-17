@@ -121,12 +121,6 @@ function cartinsert(itemid,j)
                                     <div class="banner_text">
                                         <div class="banner_text_iner">
                                         
-      <?php
-if(isset($Name))
-{
-    echo "<h2 style='color:blue'>Welcome ".$Name ."</h2>";
-}
-?> 
                                             <h1>Office Furniture</h1>
                                             <p>Experts in Ergonomics, definers of space and passionate about design.</p>
                                          

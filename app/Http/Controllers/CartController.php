@@ -24,16 +24,24 @@ class CartController extends Controller
         return redirect('/cart');
     }
     public function ChildInsert(Request $req,$no=null)
-    {
+    { 
+        $cid=$req->session()->get('cid');
         if(isset($_POST["btnpay"]))
         {
          $no=$req->tno;
             for($i=1;$i<=$no;$i++)
                  {
-                    
+
+
+            $sel=CartModel::Check($req->input('mid'.$i),$cid);
+            if(count($sel)>0)   
+            {
+            $upQ=CartModel::ChildUpdate($req->input('mid'.$i),$req->input('txtQuantity'.$i),$req->input('txtTotal'.$i));
+            }else{
+
            $inQ=CartModel::ChildInsert($req->input('mid'.$i),$req->input('txtQuantity'.$i),$req->input('txtTotal'.$i));
-          
                  }
+             }
                  return redirect('/checkout');
         }
     }
@@ -63,3 +71,4 @@ class CartController extends Controller
     
       
 }
+

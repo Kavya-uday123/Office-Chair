@@ -20,12 +20,33 @@ class CartModel extends Model
     public static function DeleteCart($delid)
     {
         $delete=DB::table('tbl_order_master')->where(['om_id'=>$delid])->delete();
+        // return $delete;
+        $delete=DB::table('tbl_order_child')->where(['om_id'=>$delid])->delete();
         return $delete;
+    }
+
+    public static function Check($mid,$cid)
+    {
+        $sel=DB::table('tbl_order_child')
+                ->join('tbl_order_master','tbl_order_master.om_id','=','tbl_order_child.om_id')
+                ->where('tbl_order_master.cust_id','=',$cid)
+                ->where('tbl_order_child.om_id','=',$mid)
+                ->where('tbl_order_master.status','=',0)
+                ->get();
+        return $sel;
+       
     }
 
     public static function ChildInsert($mid,$qty,$pay)
     {
+       
         $ins=DB::table('tbl_order_child')->insert(['om_id'=> $mid,'o_qty'=>$qty,'Payment'=>$pay,'Delivery'=>'no']);
+        return $ins;
+    }
+    public static function ChildUpdate($mid,$qty,$pay)
+    {
+       
+        $ins=DB::table('tbl_order_child')->where('om_id','=',$mid)->update(['o_qty'=>$qty,'Payment'=>$pay,'Delivery'=>'no']);
         return $ins;
     }
 

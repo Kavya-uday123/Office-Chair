@@ -32,8 +32,18 @@ class SearchChair extends Controller
       
         $cid=$req->session()->get('cid');
         
+            $chk=SearchChairModel::Check($itemid,$cid);
+            if(count($chk)>0)
+            {
+              
+              return "The Selected item is already added to cart.Please choose another item";
+
+            }else{
+
             $inQ=SearchChairModel::CartInsert($itemid,$cid);
-            return redirect('/CustomerHome');
+
+            return "Item added to cart";
+            }
         
        
     }

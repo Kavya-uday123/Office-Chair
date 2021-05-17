@@ -68,7 +68,8 @@ function cartinsert(itemid,j)
   type: 'GET',
   success: function(data) {
     
-    alert("Item added to cart Successfully");
+    alert(data);
+    //alert("Item added to cart Successfully");
   },
   });
 
@@ -160,8 +161,8 @@ function cartinsert(itemid,j)
                 <div class="col-lg-8">
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item">
-                            <h2>Shop Products</h2>
-                            <p>Home <span>-</span> Shop Products</p>
+                            <h2>Shop Category</h2>
+                            <p>Home <span>-</span> Shop Category</p>
                         </div>
                     </div>
                 </div>
