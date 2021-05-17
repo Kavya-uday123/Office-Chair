@@ -391,14 +391,16 @@
                     <div class="offer_text">
                         <h2>Weekly Sale on
                             60% Off All Products</h2>
-                        <div class="date_countdown">
+                        <!--<div class="date_countdown">
                             <div id="timer">
                                 <div id="days" class="date"></div>
                                 <div id="hours" class="date"></div>
                                 <div id="minutes" class="date"></div>
                                 <div id="seconds" class="date"></div>
                             </div>
-                        </div>
+                        </div>-->
+                        <br>
+                        <br>
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="enter email address"
                                 aria-label="Recipient's username" aria-describedby="basic-addon2">

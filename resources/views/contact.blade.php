@@ -197,7 +197,7 @@
               </div>
             </div>
             <div class="form-group mt-3">
-              <a href="#" class="btn_3 button-contactForm">Send Message</a>
+              <a href="/login" class="btn_3 button-contactForm">Send Message</a>
             </div>
           </form>
         </div>
