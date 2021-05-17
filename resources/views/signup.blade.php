@@ -18,8 +18,18 @@
         <div class="row">
             <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3"></div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-<form method="post">
-
+<form action="{{ Route('auth.save')}}"  method="post">
+@if(Session::get('Success'))
+    <div class="alert alert-success">
+    {{ Session::get('Success')}}
+    </div>
+    @endif
+    @if(Session::get('Fail'))
+    <div class="alert alert-danger">
+    {{ Session::get('Fail')}}
+    </div>
+    @endif
+    @csrf
                 <table class="table" style="background-color:#C0C0C0">
                 <tr>
                     <th>SIGN UP</th>
