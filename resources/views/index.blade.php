@@ -40,7 +40,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="<?php echo url('/'); ?>/img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="/"> <img src="<?php echo url('/'); ?>/img/logo.png" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -81,7 +81,7 @@
                             <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
                             <a href=""><i class="ti-heart"></i></a>
                             <div class="dropdown cart">
-                                <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                                <a class="dropdown-toggle" href="/cart" id="navbarDropdown3" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-cart-plus"></i>
                                 </a>+
@@ -210,7 +210,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/19_Leaf.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Leaf</h4>
-                                            <h3>Rs 1000</h3>
+                                            <h3>Rs 1800</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -220,7 +220,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/20_Genius.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Genius</h4>
-                                            <h3>Rs 1700</h3>
+                                            <h3>Rs 2700</h3>
                                             <a class="add_cart" onclick="getlogin()">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -230,7 +230,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/17_Indigo.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Indigo</h4>
-                                            <h3>Rs 3000</h3>
+                                            <h3>Rs 18500</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -240,7 +240,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/16_Chrome.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Chrome</h4>
-                                            <h3>Rs 2000</h3>
+                                            <h3>Rs 7450</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -250,7 +250,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/15_Forum.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Forum</h4>
-                                            <h3>Rs 1700</h3>
+                                            <h3>Rs 6200</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -260,7 +260,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/14_Invention.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Invention</h4>
-                                            <h3>Rs 2500</h3>
+                                            <h3>Rs 12850</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -270,7 +270,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/13_Click.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Click</h4>
-                                            <h3>Rs 2800</h3>
+                                            <h3>Rs 8900</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -280,7 +280,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/12_Contact.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Contact</h4>
-                                            <h3>Rs 3000</h3>
+                                            <h3>Rs 9600</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -294,7 +294,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/11_Astro.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Astro</h4>
-                                            <h3>Rs 1500</h3>
+                                            <h3>Rs 7500</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -304,7 +304,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/10_Anatom.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Anatom</h4>
-                                            <h3>Rs 1850</h3>
+                                            <h3>Rs 6350</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -314,7 +314,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/09_Alpha.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Alpha</h4>
-                                            <h3>Rs 2500</h3>
+                                            <h3>Rs 5700</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -324,7 +324,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/08_Allwork.png" alt="">
                                         <div class="single_product_text">
                                             <h4>AllWork</h4>
-                                            <h3>Rs 2800</h3>
+                                            <h3>Rs 7995</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -334,7 +334,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/07_Opus.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Opus</h4>
-                                            <h3>Rs 2200</h3>
+                                            <h3>Rs 9800</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -344,7 +344,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/06_Versa.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Versa</h4>
-                                            <h3>Rs 3000</h3>
+                                            <h3>Rs 14700</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -354,7 +354,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/04_Optima.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Optima</h4>
-                                            <h3>Rs 2500</h3>
+                                            <h3>Rs 11900</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -364,7 +364,7 @@
                                         <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/05_Amaze.png" alt="">
                                         <div class="single_product_text">
                                             <h4>Amaze</h4>
-                                            <h3>Rs 3800</h3>
+                                            <h3>Rs 8702</h3>
                                             <a onclick="getlogin()" class="add_cart">+ add to cart<i class="ti-heart"></i></a>
                                         </div>
                                     </div>
@@ -432,21 +432,21 @@
                             <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/02_Liberate.png" alt="">
                             <div class="single_product_text">
                                 <h4>Liberate</h4>
-                                <h3>Rs 1800</h3>
+                                <h3>Rs 6800</h3>
                             </div>
                         </div>
                         <div class="single_product_item">
                             <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/03_Pinnacle.png" alt="">
                             <div class="single_product_text">
                                 <h4>Pinnacle</h4>
-                                <h3>3500</h3>
+                                <h3>16500</h3>
                             </div>
                         </div>
                         <div class="single_product_item">
                             <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/05_Amaze.png" alt="">
                             <div class="single_product_text">
                                 <h4>Amaze</h4>
-                                <h3>Rs 1500</h3>
+                                <h3>Rs 8702</h3>
                             </div>
                         </div>
                         <div class="single_product_item">
@@ -455,14 +455,14 @@ https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/04_Opti
 " alt="">
                             <div class="single_product_text">
                                 <h4>Optima</h4>
-                                <h3>Rs 1800</h3>
+                                <h3>Rs 11900</h3>
                             </div>
                         </div>
                         <div class="single_product_item">
                             <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/06_Versa.png" alt="">
                             <div class="single_product_text">
                                 <h4>Versa</h4>
-                                <h3>Rs 3500</h3>
+                                <h3>Rs 14700</h3>
                             </div>
                         </div>
                     </div>
@@ -619,10 +619,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     <div class="col-lg-4">
                         <div class="footer_icon social_icon">
                             <ul class="list-unstyled">
-                                <li><a href="#" class="single_social_icon"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#" class="single_social_icon"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#" class="single_social_icon"><i class="fas fa-globe"></i></a></li>
-                                <li><a href="#" class="single_social_icon"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="https://www.facebook.com" class="single_social_icon"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://twitter.com" class="single_social_icon"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.globe.gov" class="single_social_icon"><i class="fas fa-globe"></i></a></li>
+                                <li><a href="https://www.behance.net" class="single_social_icon"><i class="fab fa-behance"></i></a></li>
                             </ul>
                         </div>
                     </div>

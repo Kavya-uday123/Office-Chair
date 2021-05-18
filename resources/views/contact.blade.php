@@ -24,6 +24,13 @@
     <link rel="stylesheet" href="<?php echo url('/'); ?>/css/slick.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="<?php echo url('/'); ?>/css/style.css">
+    <script>
+    function message()
+    {
+        alert('Message has been sent');
+        location.replace("/contact");
+    }
+    </script>
 </head>
 
 <body>
@@ -33,7 +40,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> <img src="<?php echo url('/'); ?>/img/logo.png" alt="logo"> </a>
+                        <a class="navbar-brand" href="/"> <img src="<?php echo url('/'); ?>/img/logo.png" alt="logo"> </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -166,7 +173,7 @@
           <h2 class="contact-title">Get in Touch</h2>
         </div>
         <div class="col-lg-8">
-          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
+          <form class="form-contact contact_form" action="/contact_process" method="post" id="contactForm"
             novalidate="novalidate">
             <div class="row">
               <div class="col-12">
@@ -197,7 +204,7 @@
               </div>
             </div>
             <div class="form-group mt-3">
-              <a href="/login" class="btn_3 button-contactForm">Send Message</a>
+              <a onclick="message()" class="btn_3 button-contactForm">Send Message</a>
             </div>
           </form>
         </div>
@@ -314,10 +321,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
           <div class="col-lg-4">
             <div class="footer_icon social_icon">
               <ul class="list-unstyled">
-                <li><a href="#" class="single_social_icon"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#" class="single_social_icon"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#" class="single_social_icon"><i class="fas fa-globe"></i></a></li>
-                <li><a href="#" class="single_social_icon"><i class="fab fa-behance"></i></a></li>
+                <li><a href="https://www.facebook.com" class="single_social_icon"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com" class="single_social_icon"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.globe.gov" class="single_social_icon"><i class="fas fa-globe"></i></a></li>
+                <li><a href="https://www.behance.net" class="single_social_icon"><i class="fab fa-behance"></i></a></li>
               </ul>
             </div>
           </div>

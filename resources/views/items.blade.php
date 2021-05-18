@@ -161,8 +161,8 @@ function cartinsert(itemid,j)
                 <div class="col-lg-8">
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item">
-                            <h2>Shop Category</h2>
-                            <p>Home <span>-</span> Shop Category</p>
+                            <h2>Shop Products</h2>
+                            <p>Home <span>-</span> Shop Products</p>
                         </div>
                     </div>
                 </div>
@@ -184,10 +184,12 @@ function cartinsert(itemid,j)
 ?>
   
     <td><div  class="card">
-    <img src="..\Images\<?php  echo $chair->chair_img?>"  class="card-img-top" height="200" width="200">
+    <img src="..\Images\<?php  echo $chair->chair_img?>"  class="card-img-top" height="400" width="400">
       <div class="card-body">
         <h5 class="card-title"><?php  echo $chair->chair_name ?> </h5>
+        <h6 class="card-title">Rs <?php  echo $chair->chair_rate ?> </h6>
         <p class="card-text"><?php  echo $chair->chair_desc ?></p>
+        <br>
         <a href="#" class="btn btn-warning" onClick="cartinsert(<?php echo $chair->chair_id; ?>,<?php echo $j; ?>)" >Add to Cart</a>
     </div></div>
     </td>

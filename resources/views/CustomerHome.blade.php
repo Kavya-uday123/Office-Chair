@@ -219,7 +219,7 @@ function cartinsert(itemid,j)
     
                                 <div class="col-lg-3 col-sm-6">
                                     <div class="single_product_item">
-                                    <img src="..\Images\<?php  echo $chair->chair_img?>" height="200" width="200">
+                                    <img src="..\Images\<?php  echo $chair->chair_img?>" height="400" width="400">
                                         <div class="single_product_text">
                                             <h4><?php  echo $chair->chair_name ?></h4>
                                             <h3>Rs  <?php  echo $chair->chair_rate ?></h3>

@@ -93,6 +93,9 @@ Route::get('/chairedit', function () {
 Route::get('/chairdelete', function () {
     return view('chairdelete');
 });
+Route::get('/contact_process', function () {
+    return view('contact_process');
+});
 // Route::get('/items', function () {
 //     return view('items');
 // });

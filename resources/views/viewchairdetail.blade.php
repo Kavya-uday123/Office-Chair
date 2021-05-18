@@ -120,11 +120,11 @@
     ?>
     
        
-        <td align="center"><img src="..\Images\<?php  echo $chair->chair_img?>" height="200" width="200"><br>
-             <b><?php  echo $chair->chair_name ?></b><br>
-             Rate:Rs. <?php  echo $chair->chair_rate ?>/-<br>
-             Qty : <?php  echo $chair->chair_qty ?><br>
-             Description: <?php  echo $chair->chair_desc ?><br>
+        <td align="center"><img src="..\Images\<?php  echo $chair->chair_img?>" height="300" width="300"><br><br>
+             <b><?php  echo $chair->chair_name ?></b><br><br>
+             Rate : Rs. <?php  echo $chair->chair_rate ?>/-<br><br>
+             Qty : <?php  echo $chair->chair_qty ?><br><br>
+             Description : <?php  echo $chair->chair_desc ?><br><br>
        
 
        </td>
