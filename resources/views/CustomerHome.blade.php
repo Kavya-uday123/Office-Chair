@@ -121,14 +121,14 @@ function cartinsert(itemid,j)
                                     <div class="banner_text">
                                         <div class="banner_text_iner">
                                         
-                                            <h1>Office Furniture</h1>
+                                            <h1>Office Chair</h1>
                                             <p>Experts in Ergonomics, definers of space and passionate about design.</p>
                                          
                                         </div>
                                     </div>
                                 </div>
                                 <div class="banner_img d-none d-lg-block">
-                                    <img src="<?php echo url('/'); ?>/img/banner_img.png" alt="">
+                                    <img src="https://www.ikea.com/images/langfjaell-series-79d1bb324fb64c9a16bb6bbecaa0b832.jpg?f=s" alt="">
                                 </div>
                             </div>
                         </div><div class="single_banner_slider">
@@ -136,14 +136,14 @@ function cartinsert(itemid,j)
                                 <div class="col-lg-5 col-md-8">
                                     <div class="banner_text">
                                         <div class="banner_text_iner">
-                                            <h1>Office Furniture</h1>
+                                            <h1>Office Chair</h1>
                                             <p>For the last five decades, aranoz has taken inspiration from contemporary aesthetic movements to re-imagine office spaces.</p>
                                          
                                         </div>
                                     </div>
                                 </div>
                                 <div class="banner_img d-none d-lg-block">
-                                    <img src="<?php echo url('/'); ?>/img/banner_img.png" alt="">
+                                    <img src="https://www.ikea.com/images/langfjaell-series-79d1bb324fb64c9a16bb6bbecaa0b832.jpg?f=s" alt="">
                                 </div>
                             </div>
                         </div><div class="single_banner_slider">
@@ -151,14 +151,14 @@ function cartinsert(itemid,j)
                                 <div class="col-lg-5 col-md-8">
                                     <div class="banner_text">
                                         <div class="banner_text_iner">
-                                            <h1>Office Furniture</h1>
+                                            <h1>Office Chair</h1>
                                             <p>Leaders in innovation, we provide economic solutions to tackle the challenges faced in the modern office. Maintaining productivity, defining comfort at work, encouraging interaction.</p>
                                        
                                         </div>
                                     </div>
                                 </div>
                                 <div class="banner_img d-none d-lg-block">
-                                    <img src="img/banner_img.png" alt="">
+                                    <img src="https://www.ikea.com/images/langfjaell-series-79d1bb324fb64c9a16bb6bbecaa0b832.jpg?f=s" alt="">
                                 </div>
                             </div>
                         </div>
