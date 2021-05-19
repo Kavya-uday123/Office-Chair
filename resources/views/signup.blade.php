@@ -83,6 +83,12 @@
                         </td>
                     </tr>
                     <tr>
+                        <td>Confirm Password</td>
+                        <td><input name="ConfirmPassword" type="password" class="form-control">
+                        <span class="text-danger">@error('Confirm Password'){{$message}} @enderror</span>
+                        </td>
+                    </tr>
+                    <tr>
                         <td></td>
                         <td><button class="btn btn-success" onclick="location.href='{{ url('/') }}'">REGISTER</button></td>
                     </tr>

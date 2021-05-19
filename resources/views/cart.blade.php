@@ -338,7 +338,7 @@ if(isset($data)){
                 <b><?php  echo $row->chair_name?></b></td>
 			
 				<td style="text-align:right;"><b> <?php  echo "Rs.".$row->chair_rate?></b></td>
-				<td  style="text-align:right;">	<input type="number" id="txtQuantity<?php echo $j?>" name="txtQuantity<?php echo $j?>" style="width: 20%" value="1" width="10dp"  onchange="gettotal(this.value,<?php echo $row->chair_rate;  ?>,<?php echo $j?>),getgtotal()" onkeyup="gettotal(this.value,<?php echo $row->chair_rate  ?>,<?php echo $j?>),getgtotal()">
+				<td  style="text-align:right;">	<input type="number" id="txtQuantity<?php echo $j?>" name="txtQuantity<?php echo $j?>" style="width: 20%" min="1" value="1" width="10dp"  onchange="gettotal(this.value,<?php echo $row->chair_rate;  ?>,<?php echo $j?>),getgtotal()" onkeyup="gettotal(this.value,<?php echo $row->chair_rate  ?>,<?php echo $j?>),getgtotal()">
  
 				<td  style="text-align:center;">	<input type="number" readonly="readonly" style="width: 30%" id="txtTotal<?php echo $j?>" name="txtTotal<?php echo $j?>" width="10dp" value="<?php echo $item_price?>"></td>
 				<!-- <td style="text-align:center;"><a href="#"   class="btnRemoveAction" ><img src="..\icons\icon-delete.png" alt="Remove Item" onClick="cartdelete(<?php echo $row->om_id; ?>)" /></a></td> -->

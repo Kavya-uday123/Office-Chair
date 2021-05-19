@@ -23,6 +23,7 @@ class CreateChairModellogsTable extends Migration
             $table->string("Phone");
             $table->string("Email");
             $table->string("Password");
+            $table->string("ConfirmPassword");
             $table->timestamps();
         });
     }
