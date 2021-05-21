@@ -6,24 +6,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>aranoz</title>
-    <link rel="icon" href="<?php echo url('/'); ?>/img/favicon.png">
+    <link rel="icon" href="../img/favicon.png">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- animate CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/animate.css">
+    <link rel="stylesheet" href="../css/animate.css">
     <!-- owl carousel CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
     <!-- font awesome CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/all.css">
+    <link rel="stylesheet" href="../css/all.css">
     <!-- flaticon CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/flaticon.css">
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/themify-icons.css">
+    <link rel="stylesheet" href="<../css/flaticon.css">
+    <link rel="stylesheet" href="<../css/themify-icons.css">
     <!-- font awesome CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/magnific-popup.css">
+    <link rel="stylesheet" href="<../css/magnific-popup.css">
     <!-- swiper CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/slick.css">
+    <link rel="stylesheet" href="../css/slick.css">
     <!-- style CSS -->
-    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/style.css">
+    <link rel="stylesheet" href="<../css/style.css">
     <script>
     function getlogin()
     {
@@ -633,31 +633,31 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!--::footer_part end::-->
 
     <!-- jquery plugins here-->
-    <script src="<?php echo url('/'); ?>/js/jquery-1.12.1.min.js"></script>
+    <script src="../js/jquery-1.12.1.min.js"></script>
     <!-- popper js -->
-    <script src="<?php echo url('/'); ?>/js/popper.min.js"></script>
+    <script src="../js/popper.min.js"></script>
     <!-- bootstrap js -->
-    <script src="<?php echo url('/'); ?>/js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <!-- easing js -->
-    <script src="<?php echo url('/'); ?>/js/jquery.magnific-popup.js"></script>
+    <script src="../js/jquery.magnific-popup.js"></script>
     <!-- swiper js -->
-    <script src="<?php echo url('/'); ?>/js/swiper.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
     <!-- swiper js -->
-    <script src="<?php echo url('/'); ?>/js/masonry.pkgd.js"></script>
+    <script src="../js/masonry.pkgd.js"></script>
     <!-- particles js -->
-    <script src="<?php echo url('/'); ?>/js/owl.carousel.min.js"></script>
-    <script src="<?php echo url('/'); ?>/js/jquery.nice-select.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/jquery.nice-select.min.js"></script>
     <!-- slick js -->
-    <script src="<?php echo url('/'); ?>/js/slick.min.js"></script>
-    <script src="<?php echo url('/'); ?>/js/jquery.counterup.min.js"></script>
-    <script src="<?php echo url('/'); ?>/js/waypoints.min.js"></script>
-    <script src="<?php echo url('/'); ?>/js/contact.js"></script>
-    <script src="<?php echo url('/'); ?>/js/jquery.ajaxchimp.min.js"></script>
-    <script src="<?php echo url('/'); ?>/js/jquery.form.js"></script>
-    <script src="<?php echo url('/'); ?>/js/jquery.validate.min.js"></script>
-    <script src="<?php echo url('/'); ?>/js/mail-script.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/jquery.counterup.min.js"></script>
+    <script src="../js/waypoints.min.js"></script>
+    <script src="../js/contact.js"></script>
+    <script src="../js/jquery.ajaxchimp.min.js"></script>
+    <script src="../js/jquery.form.js"></script>
+    <script src="../js/jquery.validate.min.js"></script>
+    <script src="../js/mail-script.js"></script>
     <!-- custom js -->
-    <script src="<?php echo url('/'); ?>/js/custom.js"></script>
+    <script src="../js/custom.js"></script>
 </body>
 
 </html>

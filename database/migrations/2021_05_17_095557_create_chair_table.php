@@ -19,7 +19,7 @@ class CreateChairTable extends Migration
             $table->string('chair_desc',3000);
             $table->string('chair_qty');
             $table->string('chair_rate');
-            $table->string('chair_img',1000);
+            $table->longtext('chair_img',1000);
             $table->timestamps();
         });
     }

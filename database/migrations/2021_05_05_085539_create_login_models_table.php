@@ -19,6 +19,12 @@ class CreateLoginModelsTable extends Migration
             $table->string("Password");
             $table->timestamps();
         });
+        DB::table('login_models')->insert(
+            array(
+                'Username' => 'admin',
+                'Password' => 'admin'
+            )
+        );
     }
 
     /**
