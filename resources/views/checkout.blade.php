@@ -507,7 +507,7 @@ if(isset($data)){
       </div>
       <div class="input-group">
 				<div class="input-box">
-					<input class="name" type="text" name="txtdate" id="txtdate" data-mask="00 / 00 / 0000" placeholder="EXP DATE" required="required">
+					<input class="name" type="text" name="txtdate" id="txtdate" data-mask="00 / 00 " placeholder="EXP DATE" required="required">
 					<i class="fa fa-calendar icon" aria-hidden="true"></i>
 				</div>
 			</div>
