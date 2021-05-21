@@ -75,6 +75,7 @@ class ChairController extends Controller
           
        }
 
+      
 
         if(isset($_POST["btnupdate"]))
         {

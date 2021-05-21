@@ -15,5 +15,4 @@ class UserReportModel extends Model
                             ->get();
         return $view;
     }
-    
 }

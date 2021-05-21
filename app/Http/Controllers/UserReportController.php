@@ -10,6 +10,5 @@ class UserReportController extends Controller
     {
         $data=UserReportModel::ViewUsers();
         return view('/UsersReport',['data'=>$data]);
-       
     }
 }
