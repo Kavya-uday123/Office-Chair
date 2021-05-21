@@ -104,7 +104,7 @@
                 <div class="col-lg-8">
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item">
-                            <h2>SignUp - Login</h2>
+                            <h2>Sign Up - Login</h2>
                             <p><span></span> </p>
                         </div>
                     </div>

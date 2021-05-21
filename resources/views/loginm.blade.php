@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
 
-    <title>Document</title>
+    <title>aranoz</title>
 </head>
 <body background="https://cdn.mos.cms.futurecdn.net/2AdwSErtbeXE6HXczRVZRd.jpg">
     <br>

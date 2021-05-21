@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>aranoz</title>
 </head>
 <body background="https://www.officechairsonline.in/wp-content/uploads/2016/05/office-furniture.jpg">
     <br>

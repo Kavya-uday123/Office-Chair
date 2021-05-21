@@ -19,9 +19,14 @@ class OrderController extends Controller
         $zip=$req->zip;
         $message=$req->message;
         $no=$req->no;
+        $rdbpay=$req->rdbpay;
+        $txtcardno=$req->txtcardno;
       
         if(isset($_POST["btnpay"]))
         {
+            $req->session()->put('rdbpay',$rdbpay);
+            $req->session()->put('txtcardno',$txtcardno);
+
             $cid=$req->session()->get('cid');
             $inQ=OrderModel::InsertOrder($name,$number,$email,$add1,$add2,$city,$zip,$message,$cid,$no);
           
@@ -41,6 +46,9 @@ class OrderController extends Controller
     {
 
         $cid=$req->session()->get('cid');
+        $txtcardno=$req->session()->get('txtcardno');
+        $rdbpay=$req->session()->get('rdbpay');
+        
         $dat=OrderModel::ViewBill($cid);
         if(isset($dat))
         {
@@ -50,7 +58,7 @@ class OrderController extends Controller
             }
         }
         $data=OrderModel::ViewOrderDetails($cid,$no);
-        return view('/confirmation',['data'=>$data,'data1'=>$dat]);
+        return view('/confirmation',['data'=>$data,'data1'=>$dat,'txtcardno'=>$txtcardno,'rdbpay'=>$rdbpay]);
        
     }
 
@@ -62,4 +70,3 @@ class OrderController extends Controller
        
     }
 }
-

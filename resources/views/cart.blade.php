@@ -356,7 +356,7 @@ if(isset($data)){
 <td colspan="3" align="right">Total : <input type="hidden" id="tno" name="tno" value="<?php echo $j?>"></td>
 
 <td align="center" ><strong><input type="text" id="gtotal" name="gtotal" readonly value=""></strong></td>
-<td> <input type="submit" name="btnpay" id="btnpay"  class="btn btn-success" value="Pay Now" /></td>
+<td> <input type="submit" name="btnpay" id="btnpay"  class="btn btn-success" value="Proceed" /></td>
 </tr>
 </tbody>
 </table>

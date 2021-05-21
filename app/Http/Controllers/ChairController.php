@@ -12,11 +12,14 @@ class ChairController extends Controller
         $desc=$req->cdes; 
         $qty=$req->cqty;
         $rate=$req->crate; 
+
         $photo=$req->cfile;
         $destination=public_path().'\Images';
         $photo->move($destination,$photo->getClientOriginalName());
+
         if(isset($_POST["submit"]))
-        {   $inQ=ChairModel::InsertData($name,$desc,$qty,$rate,$photo);
+        {
+            $inQ=ChairModel::InsertData($name,$desc,$qty,$rate,$photo);
             return redirect('/chairadd');
         }
        
@@ -58,14 +61,24 @@ class ChairController extends Controller
         $qty=$req->cqty;
         $rate=$req->crate; 
 
-       // $photo=$req->cfile;
+       $photo=$req->cfile;
+      
+       if(isset($photo)){
 
-        // $destination=public_path().'\Images';
-        // $photo->move($destination,$photo->getClientOriginalName());
+        $ph=$req->cfile;
+        $filename=$ph->getClientOriginalName();
+        $destination=public_path().'\Images';
+        $ph->move($destination,$ph->getClientOriginalName());
+       }
+       else{
+           $filename=$req->hfile;
+          
+       }
+
 
         if(isset($_POST["btnupdate"]))
         {
-            $upQ=ChairModel::UpdateData($editid,$name,$desc,$qty,$rate);
+            $upQ=ChairModel::UpdateData($editid,$name,$desc,$qty,$rate,$filename);
             return redirect('/chairview');
         }
 

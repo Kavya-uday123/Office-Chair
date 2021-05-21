@@ -32,9 +32,9 @@ class ChairModel extends Model
         return $delete;
     }
 
-    public static function UpdateData($editid,$name,$desc,$qty,$rate)
+    public static function UpdateData($editid,$name,$desc,$qty,$rate,$photo)
     {
-        $up=DB::table('tbl_chair')->where('chair_id','=',$editid)->update(['chair_name'=>$name,'chair_desc'=> $desc,'chair_qty'=> $qty,'chair_rate'=>$rate]);
+        $up=DB::table('tbl_chair')->where('chair_id','=',$editid)->update(['chair_name'=>$name,'chair_desc'=> $desc,'chair_qty'=> $qty,'chair_rate'=>$rate,'chair_img'=>$photo]);
         return $up;
     }
 }

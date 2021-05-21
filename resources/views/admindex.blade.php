@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>aranoz</title>
 </head>
 <body background="https://www.durian.in/blog/wp-content/uploads/2018/07/Featured-Image-2.jpg" height="100%" width="100%">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>aranoz</title>
 </head>
 <body background="https://thesmartlocal.com/wp-content/uploads/2020/09/ergonomic-chairs-singapore-1.jpg">
 
@@ -44,7 +44,7 @@
         <div class="col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1"></div>
             <div class="col-12 col-sm-10 col-md-10 col-lg-10 col-xl-10 col-xxl-10">
             <h2 align="center" style="color:grey">Edit Chair</h2>
-            <form action="" method="post">
+            <form action="" method="post" enctype="multipart/form-data">
 {{ csrf_field() }}
                 <table class="table"  style="background-color:#C0C0C0">
                 
@@ -74,11 +74,11 @@
                         <td><input value="<?php  echo $chair->chair_rate ?>" name="crate" type="text" class="form-control"></td>
                         <span class="text-danger">@error('Rate'){{$message}} @enderror</span>
                     </tr>
-                    <!-- <tr>
-                    <td>Image</td>
-                        <td><input name="cimage" type="file" class="custom-file-input">
+                    <tr>
+                    <td>Image</td><input name="hfile" type="hidden" value="<?php  echo $chair->chair_img ?>" >
+                        <td><input name="cfile" type="file" class="custom-file-input"<?php  echo $chair->chair_img ?>>
                         <label class="custom-file-label"></label>
-                    </tr> -->
+                    </tr> 
                     <tr>
                         <td></td>
                         <td><button type="submit" name="btnupdate" class="btn btn-success">UPDATE</button></td>

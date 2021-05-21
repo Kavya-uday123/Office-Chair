@@ -27,10 +27,136 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="<?php echo url('/'); ?>/css/style.css">
     <script type="text/javascript">
-        function preventBack() { window.history.forward(); }
-        setTimeout("preventBack()", 0);
-        window.onunload = function () { null };
+        // function preventBack() { window.history.forward(); }
+        // setTimeout("preventBack()", 0);
+        // window.onunload = function () { null };
     </script>
+    	<style>
+	h4{
+			padding-bottom: 5px;
+			color: #7ed321;
+		}
+		.input-group{
+			margin-bottom: 8px;
+			width: 100%;
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			padding: 5px 0;
+		}
+		.input-box{
+			width: 100%;
+			margin-right: 12px;
+			position: relative; 
+		}
+		.input-box:last-child{
+			margin-right: 0;
+		}
+		.name{
+			padding: 14px 10px 14px 50px;
+			width: 100%;
+			background-color: #fcfcfc;
+			border: 1px solid #00000033;
+			outline: none;
+			letter-spacing: 1px;
+			transition: 0.3s;
+			border-radius: 3px;
+			color: #333;
+		}
+		.name:focus, .dob:focus{
+			-webkit-box-shadow:0 0 2px 1px #7ed32180;
+			-moz-box-shadow:0 0 2px 1px #7ed32180;
+			box-shadow: 0 0 2px 1px #7ed32180;
+			border: 1px solid #ff3368;
+		}
+		.input-box .icon{
+			width: 48px;
+			display: flex;
+			justify-content: center;
+			position: absolute;
+			padding: 15px;
+			top: 0px;
+			left: 0px;
+			bottom: 0px;
+			color: #333;
+			background-color: #f1f1f1;	
+			border-radius: 2px 0 0 2px;
+			transition: 0.3s;
+			font-size: 20px;
+			pointer-events: none;
+			border: 1px solid #000000033;
+			border-right: none;
+		}
+		
+		
+		.name:focus + .icon{
+			background-color: #ff3368;
+			color: #fff;
+			border-right: 1px solid #7ed321;
+			border-right: none;
+			transition: 1s;
+		}
+		.radio:checked + label {
+			background-color:#ff3368;
+			color: #fcfcfc	;
+			border-right: 1px solid #7ed321;
+			border-right: none;
+			transition: 1s;
+		}
+		.dob{
+			width: 30%;
+			padding: 14px;
+			text-align: center;
+			background-color: #fcfcfc;
+			transition: 0.3s;
+			outline: none;
+			border: 1px solid #c0bfbf;
+			border-radius: 3px;
+		}
+		.radio{
+			display: none;
+		}
+		.input-box label{
+			width: 50%;
+			padding: 13px;
+			background-color: #ff3368;
+			display: inline-block;
+			float: left;
+			text-align: center;
+			border: 1px solid #c0bfbf; 
+		}
+		.input-box label:first-of-type{
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+			border-right: none;
+		}
+		.input-box label:last-of-type{
+			border-top-left-radius: 3px;
+			border-bottom-left-radius: 3px;
+		}
+		
+		.radio:checked{
+			background-color:#ff3368;
+			color: #fff;
+		}
+		
+		/* input[type=submit]{
+			width: 100%;
+			background: transparent;
+			border: none;
+			background: blue;
+			color: #fff;
+			padding: 15px;
+			border-radius: 4px;
+			font-size: 16px;
+			transition: all 0.35s ease;
+		}
+		input[type=submit]:hover{
+			cursor: pointer;
+			background: #5eb105;
+		} */
+
+	</style>
 </head>
 <body>
   <!--::header part start::-->
@@ -38,7 +164,41 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
-               
+                <!doctype html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>aranoz</title>
+    <link rel="icon" href="<?php echo url('/'); ?>/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/owl.carousel.min.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/all.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/flaticon.css">
+    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/themify-icons.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="<?php echo url('/'); ?>/css/style.css">
+    <script>
+    function getlogin()
+    {
+        alert('Please login to purchase chair');
+        location.replace("/login");
+    }
+    </script>
+</head>
+
 <body>
     <!--::header part start::-->
     <header class="main_menu home_menu">
@@ -186,14 +346,15 @@
             <h3>Billing Details</h3>
             <form class="row contact_form" action="#" method="post" novalidate="novalidate">
               <div class="col-md-6 form-group p_star">
-                <input type="text" class="form-control" id="first" name="name" placeholder="Name" />
+                <input type="text" class="form-control" id="first" name="name"   placeholder="Name"/>
+           
               </div>
               <!-- <div class="col-md-6 form-group p_star">
                 <input type="text" class="form-control" id="last" name="name" />
                 <span class="placeholder" data-placeholder="Last name"></span>
               </div> -->
             
-              <div class="col-md-6 form-group p_star">
+              <div class="col-md-6 form-group p_star"> 
                 <input type="text" class="form-control" id="number" name="number" placeholder="Phone number" />
               </div>
               <div class="col-md-6 form-group p_star">
@@ -207,11 +368,10 @@
                 </select>
               </div> -->
               <div class="col-md-12 form-group p_star">
-                <input type="text" class="form-control" id="add1" name="add1" placeholder="Address line 01"/>
-             
+                <input type="text" class="form-control" id="add1" name="add1" placeholder="Address line 01" />
               </div>
               <div class="col-md-12 form-group p_star">
-                <input type="text" class="form-control" id="add2" name="add2" placeholder="Address line 02" />
+                <input type="text" class="form-control" id="add2" name="add2" placeholder="Address line 02"/>
               </div>
               <div class="col-md-12 form-group p_star">
                 <input type="text" class="form-control" id="city" name="city" placeholder="Town/City" />
@@ -285,7 +445,7 @@ if(isset($data)){
                   </a>
                 </li>
               </ul> <input type="hidden"  name="no" value=<?php echo $no;?> />
-              <div class="payment_item">
+              <!-- <div class="payment_item">
                 <div class="radion_btn">
                   <input type="radio" id="f-option5" name="selector" />
                   <label for="f-option5">Check payments</label>
@@ -316,7 +476,48 @@ if(isset($data)){
               <button type="submit" class="btn_3" name="btnpay" href="#">Proceed to Paypal</button>
             </div>
           </div>
-         
+          -->
+          <br>
+          <div class="input-group">
+				<div class="input-box">
+					<h4>Payment Details</h4>
+          <br>
+					<input type="radio" name="rdbpay" id="cc" checked class="radio" value="Credit Card">
+					<label for="cc">
+						<span><i class="fa fa-cc-visa" aria-hidden="true"></i>Credit Card</span>
+					</label>
+					<input type="radio" name="rdbpay" id="dc" class="radio" value="Debit Card">
+					<label for="dc">
+						<span><i class="fa fa-cc-visa" aria-hidden="true"></i>Debit Card</span>
+					</label>
+				</div>
+			</div>
+
+      <div class="input-group">
+				<div class="input-box">
+					<input class="name" type="tel" id="txtcardno" name="txtcardno" required="required" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+					<i class="fa fa-credit-card icon" aria-hidden="true"></i>
+				</div>
+			</div>
+			<div class="input-group">
+				<div class="input-box">
+					<input class="name" type="text" name="txtcvc" id="txtcvc" data-mask="000" placeholder="CVC" required="required">
+					<i class="fa fa-user icon" aria-hidden="true"></i>
+				</div>
+      </div>
+      <div class="input-group">
+				<div class="input-box">
+					<input class="name" type="text" name="txtdate" id="txtdate" data-mask="00 / 00 / 0000" placeholder="EXP DATE" required="required">
+					<i class="fa fa-calendar icon" aria-hidden="true"></i>
+				</div>
+			</div>
+			<br>
+			<div class="input-group">
+				<div class="input-box">
+                                   <center> <input type="submit"  class="btn_3" name="btnpay"  value="Pay Now"></center>
+				</div>
+			</div>
+
         </div>
       </div>
     </div>
@@ -447,6 +648,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="<?php echo url('/'); ?>/js/mail-script.js"></script>
     <!-- custom js -->
     <script src="<?php echo url('/'); ?>/js/custom.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js'></script>
 </body>
 
 </html>

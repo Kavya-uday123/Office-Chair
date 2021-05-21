@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>aranoz</title>
 </head>
 <body background="https://m-moser.imgix.net/uploads/2017_11/DNB_4-2131_OR_Meeting_01-1800px.jpg?auto=format&fit=crop&crop=faces&w=1425&h=750">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
