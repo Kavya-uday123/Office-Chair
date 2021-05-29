@@ -537,12 +537,12 @@ https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/04_Opti
     <!--::subscribe_area part end::-->
 
     <!--::footer_part start::-->
-   <!-- <footer class="footer_part">
+   <footer class="footer_part">
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-sm-6 col-lg-2">
                     <div class="single_footer_part">
-                        <h4>Top Products</h4>
+                        <!--<h4>Top Products</h4>
                         <ul class="list-unstyled">
                             <li><a href="">Managed Website</a></li>
                             <li><a href="">Manage Reputation</a></li>
