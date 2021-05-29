@@ -542,17 +542,6 @@ https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/04_Opti
             <div class="row justify-content-around">
                 <div class="col-sm-6 col-lg-2">
                     <div class="single_footer_part">
-                        <h4></h4>
-                        <ul class="list-unstyled">
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                            <li><a href=""></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-2">
-                    <div class="single_footer_part">
                         <h4>Quick Links</h4>
                         <ul class="list-unstyled">
                             <li><a href="/">Home</a></li>
@@ -597,7 +586,7 @@ https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/04_Opti
                                     class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
                                     onblur="this.placeholder = ' Email Address '">
                                 <button type="submit" name="submit" id="newsletter-submit"
-                                    class="email_icon newsletter-submit button-contactForm">subscribe</button>
+                                  &nbsp&nbsp&npsp  class="email_icon newsletter-submit button-contactForm">subscribe</button>
                                 <div class="mt-10 info"></div>
                             </form>
                         </div>
