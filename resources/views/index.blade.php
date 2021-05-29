@@ -558,7 +558,7 @@ https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/04_Opti
                             <li><a href="/">Home</a></li>
                             <li><a href="/login">Login</a></li>
                             <li><a href="/contact">Contact Us</a></li>
-                            <li><a href="/admindex">Admin</a></li>
+                            <li><a href="/loginnm">Admin</a></li>
                         </ul>
                     </div>
                 </div>
@@ -584,9 +584,9 @@ https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/04_Opti
                         </ul>
                     </div>
                 </div>-->
-               <!-- <div class="col-sm-6 col-lg-4">
+               <div class="col-sm-6 col-lg-4">
                     <div class="single_footer_part">
-                        <h4>Newsletter</h4>
+                        <!--<h4>Newsletter</h4>
                         <p>Heaven fruitful doesn't over lesser in days. Appear creeping
                         </p>-->
                         <div id="mc_embed_signup">
