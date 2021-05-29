@@ -537,7 +537,7 @@ https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/04_Opti
     <!--::subscribe_area part end::-->
 
     <!--::footer_part start::-->
-    <footer class="footer_part">
+   <!-- <footer class="footer_part">
         <div class="container">
             <div class="row justify-content-around">
                 <div class="col-sm-6 col-lg-2">
@@ -550,19 +550,19 @@ https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/04_Opti
                             <li><a href="">Marketing Service</a></li>
                         </ul>
                     </div>
-                </div>
+                </div>-->
                 <div class="col-sm-6 col-lg-2">
                     <div class="single_footer_part">
                         <h4>Quick Links</h4>
                         <ul class="list-unstyled">
-                            <li><a href="">Jobs</a></li>
-                            <li><a href="">Brand Assets</a></li>
-                            <li><a href="">Investor Relations</a></li>
-                            <li><a href="">Terms of Service</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/login">Login</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
+                            <li><a href="/admindex">Admin</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-2">
+                <!--<div class="col-sm-6 col-lg-2">
                     <div class="single_footer_part">
                         <h4>Features</h4>
                         <ul class="list-unstyled">
@@ -583,12 +583,12 @@ https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/04_Opti
                             <li><a href="">Agencies</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
+                </div>-->
+               <!-- <div class="col-sm-6 col-lg-4">
                     <div class="single_footer_part">
                         <h4>Newsletter</h4>
                         <p>Heaven fruitful doesn't over lesser in days. Appear creeping
-                        </p>
+                        </p>-->
                         <div id="mc_embed_signup">
                             <form target="_blank"
                                 action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"

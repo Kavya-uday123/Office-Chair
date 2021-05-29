@@ -561,7 +561,7 @@ if(isset($data)){
             </ul>
           </div>
         </div>
-        <div class="col-sm-6 col-lg-2">
+      <!--  <div class="col-sm-6 col-lg-2">
           <div class="single_footer_part">
             <h4>Resources</h4>
             <ul class="list-unstyled">
@@ -573,10 +573,10 @@ if(isset($data)){
           </div>
         </div>
         <div class="col-sm-6 col-lg-4">
-          <div class="single_footer_part">
-            <h4>Newsletter</h4>
+          <div class="single_footer_part">-->
+         <!--   <h4>Newsletter</h4>
             <p>Heaven fruitful doesn't over lesser in days. Appear creeping
-            </p>
+            </p>-->
             <div id="mc_embed_signup">
               <form target="_blank"
                 action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
@@ -600,7 +600,7 @@ if(isset($data)){
           <div class="col-lg-8">
             <div class="copyright_text">
               <P><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></P>
             </div>
           </div>
