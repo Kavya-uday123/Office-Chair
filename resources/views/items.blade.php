@@ -112,7 +112,9 @@ function cartinsert(itemid,j)
                                         <!-- <a class="dropdown-item" href="/confirmation">confirmation</a> -->
                                     </div>
                                 </li>
-                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/OrderHistory">Order History</a>
+                                </li>
                                 <!-- <li class="nav-item">
                                     <a class="nav-link" href="/contact">Contact</a>
                                 </li> -->
