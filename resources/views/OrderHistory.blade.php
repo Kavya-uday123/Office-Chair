@@ -124,12 +124,12 @@ function cartinsert(itemid,j)
                         </div>
                         <div class="hearer_icon d-flex">
                            
-                            <div class="dropdown cart">
+                            <!--<div class="dropdown cart">
                                 <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-cart-plus"></i>
                                 </a>+
-                                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <div class="single_product">
     
                                     </div>
