@@ -122,14 +122,14 @@ function cartinsert(itemid,j)
                             </ul>
              
                         </div>
-                        <!--<div class="hearer_icon d-flex">
+                        <div class="hearer_icon d-flex">
                            
                             <div class="dropdown cart">
                                 <a class="dropdown-toggle" href="#" id="navbarDropdown3" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-cart-plus"></i>
                                 </a>+
-                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <div class="single_product">
     
                                     </div>
@@ -183,7 +183,7 @@ function cartinsert(itemid,j)
         if($i==1) { ?><tr ><?php }
 ?>
   
-    <td><div  class="card">
+  <td><div  class="card">
     <img src="..\Images\<?php  echo $chair->chair_img?>"  class="card-img-top" height="400" width="400">
       <div class="card-body">
         <h5 class="card-title"><b><?php  echo $chair->chair_name ?></b> </h5>
