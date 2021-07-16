@@ -29,7 +29,9 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/chairview">View</a>
               </li>
-              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/stockview">Stock View</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/UsersReport">Registered Users</a>
               </li>
