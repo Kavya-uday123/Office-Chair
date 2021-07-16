@@ -340,13 +340,17 @@
         <input type="text" placeholder="Enter coupon code" />
         <a class="tp_btn" href="#">Apply Coupon</a>
       </div> -->
+      <?php
+      if(isset($udata)){
+    foreach ($udata as $urow){ 
+      ?>
       <div class="billing_details">
         <div class="row">
           <div class="col-lg-8">
             <h3>Billing Details</h3>
             <form class="row contact_form" action="#" method="post" novalidate="novalidate">
               <div class="col-md-6 form-group p_star">
-                <input type="text" class="form-control" id="first" name="name"   placeholder="Name"/>
+                Name:<input type="text" class="form-control"  id="first" required name="name" value="<?php echo $urow->Name ?>"   placeholder="Name"/>
            
               </div>
               <!-- <div class="col-md-6 form-group p_star">
@@ -355,10 +359,10 @@
               </div> -->
             
               <div class="col-md-6 form-group p_star"> 
-                <input type="text" class="form-control" id="number" name="number" placeholder="Phone number" />
+                Phone:<input type="text" class="form-control" required id="number" name="number" value="<?php echo $urow->Phone ?>" placeholder="Phone number" />
               </div>
               <div class="col-md-6 form-group p_star">
-                <input type="text" class="form-control" id="email" name="email" placeholder="Email Address" />
+                Email:<input type="text" class="form-control" required id="email" name="email" value="<?php echo $urow->Email ?>" placeholder="Email Address" />
               </div>
               <!-- <div class="col-md-12 form-group p_star">
                 <select class="country_select">
@@ -368,14 +372,14 @@
                 </select>
               </div> -->
               <div class="col-md-12 form-group p_star">
-                <input type="text" class="form-control" id="add1" name="add1" placeholder="Address line 01" />
+                Address:<input type="text" class="form-control" required id="add1" name="add1" value="<?php echo $urow->Address ?>" placeholder="Address line 01" />
               </div>
-              <div class="col-md-12 form-group p_star">
+              <!-- <div class="col-md-12 form-group p_star">
                 <input type="text" class="form-control" id="add2" name="add2" placeholder="Address line 02"/>
-              </div>
-              <div class="col-md-12 form-group p_star">
+              </div> -->
+              <!-- <div class="col-md-12 form-group p_star">
                 <input type="text" class="form-control" id="city" name="city" placeholder="Town/City" />
-              </div>
+              </div> -->
               <!-- <div class="col-md-12 form-group p_star">
                 <select class="country_select">
                   <option value="1">District</option>
@@ -384,7 +388,7 @@
                 </select>
               </div> -->
               <div class="col-md-12 form-group">
-                <input type="text" class="form-control" id="zip" name="zip" placeholder="Postcode/ZIP" />
+                Pincode<input type="text" class="form-control" required id="zip" name="zip" value="<?php echo $urow->Pincode ?>" placeholder="Postcode/ZIP" />
               </div>
               <div class="col-md-12 form-group">
                 <div class="creat_account">
@@ -395,15 +399,15 @@
               <div class="col-md-12 form-group">
                 <div class="creat_account">
                   <h3>Shipping Details</h3>
-                  <input type="checkbox" id="f-option3" name="selector" />
-                  <label for="f-option3">Ship to a different address?</label>
+                  <!-- <input type="checkbox" id="f-option3" name="selector" /> -->
+                  <label for="f-option3">Shipping Address</label>
                 </div>
-                <textarea class="form-control" name="message" id="message" rows="1"
+                <textarea class="form-control" name="message" id="message" required rows="1"
                   placeholder="Order Notes"></textarea>
               </div>
          
           </div>
-         
+          <?php } } ?>
           <div class="col-lg-4">
             <div class="order_box">
               <h2>Your Order</h2>
@@ -495,19 +499,19 @@ if(isset($data)){
 
       <div class="input-group">
 				<div class="input-box">
-					<input class="name" type="tel" id="txtcardno" name="txtcardno" required="required" data-mask="0000 0000 0000 0000" placeholder="Card Number">
+					<input class="name" type="tel" id="txtcardno" required name="txtcardno" required="required" data-mask="0000 0000 0000 0000" placeholder="Card Number">
 					<i class="fa fa-credit-card icon" aria-hidden="true"></i>
 				</div>
 			</div>
 			<div class="input-group">
 				<div class="input-box">
-					<input class="name" type="text" name="txtcvc" id="txtcvc" data-mask="000" placeholder="CVC" required="required">
+					<input class="name" type="text" name="txtcvc" required id="txtcvc" data-mask="000" placeholder="CVC" required="required">
 					<i class="fa fa-user icon" aria-hidden="true"></i>
 				</div>
       </div>
       <div class="input-group">
 				<div class="input-box">
-					<input class="name" type="text" name="txtdate" id="txtdate" data-mask="00 / 00 " placeholder="EXP DATE" required="required">
+					<input class="name" type="text" name="txtdate" required id="txtdate" data-mask="00 / 00 " placeholder="EXP DATE" required="required">
 					<i class="fa fa-calendar icon" aria-hidden="true"></i>
 				</div>
 			</div>

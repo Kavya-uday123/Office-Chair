@@ -8,7 +8,13 @@ class LoginController extends Controller
 {
     public function CustomerLog(Request $req)
     {
-        $un=$req->Name;
+        $req->validate([
+            'Username'=>'required|email',
+            'Password'=>'required',
+            
+            
+        ]);
+        $un=$req->Username;
         $pw=$req->Password;
 
         $log=LoginModel::LogData($un,$pw);
@@ -40,6 +46,12 @@ class LoginController extends Controller
     }
     public function AdminLog(Request $req)
     {
+        $req->validate([
+            'Username'=>'required',
+            'Password'=>'required',
+            
+            
+        ]);
         $un=$req->Username;
         $pw=$req->Password;
 

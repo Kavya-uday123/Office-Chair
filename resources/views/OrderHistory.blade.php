@@ -161,58 +161,50 @@ function cartinsert(itemid,j)
                 <div class="col-lg-8">
                     <div class="breadcrumb_iner">
                         <div class="breadcrumb_iner_item">
-                            <h2>Shop Products</h2>
-                            <p>Home <span>-</span> Shop Products</p>
+                            <h2>Order History</h2>
+                            <p>Home <span>-</span> Completed Orders</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <form action="" method="post" enctype="multipart/form-data">
-{{ csrf_field() }}
-      <!-- <div class="row row-cols-1 row-cols-md-4 lg-4"> -->
-      <table align="center" cellpadding="15" cellspacing="15">
-<?php
-      $i=0;$j=0;
-     if(isset($data))
+    <h2></h2>
+    <!-- <h2 align="center" style="color:grey">Order History</h2> -->
+            <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"> -->
+            <table class="table" style="background-color:#C0C0C0;width:95%;border:1px solid black;margin-left:30px"  >
+    <tr>
+        <th>Sl.No</th>
+        <th>Order Date</th>
+        <th>Chair</th>
+        <th>Quantity</th>
+        <th>Rate</th>
+        <th>Total</th>
+       
+    </tr>
+    <?php if(isset($data))
     {
-    foreach($data as $chair)
-    {
-        $i++;$j++; 
-        if($i==1) { ?><tr ><?php }
-?>
-  
-    <td><div  class="card">
-    <img src="..\Images\<?php  echo $chair->chair_img?>"  class="card-img-top" height="400" width="400">
-      <div class="card-body">
-        <h5 class="card-title"><b><?php  echo $chair->chair_name ?></b> </h5>
-        <br>
-        <h5 class="card-title">Rs <?php  echo $chair->chair_rate ?>/- </h5><br>
-        <p class="card-text"><?php  echo $chair->chair_desc ?></p><br>
-        <h5 class="card-title"><?php if($chair->chair_qty<1){ ?> <b style="color:red">Out of stock</b> <?php } else{ ?><b style="color:green">In stock</b><?php } ?></h5>
-        <br>
-        <?php if($chair->chair_qty<1){ ?>  <a href="#" class="btn btn-warning" onClick="alert('Out of stock')" >Add to Cart</a>
-         <?php } else{ ?>
-        <a href="#" class="btn btn-warning" onClick="cartinsert(<?php echo $chair->chair_id; ?>,<?php echo $j; ?>)" >Add to Cart</a>
-    <?php } ?>
-    </div></div>
-    </td>
-  
-  <?php
-  if($i==4)
-  {
-      ?>
+        $i=0;
+    foreach($data as $row)
+    { $i++;
+    ?>
+    <tr>
+        <td><?php  echo $i ?></td>
+        <td><?php  echo $row->o_date ?></td>
+        <td><?php  echo $row->chair_name ?></td>
+        <td><?php  echo $row->o_qty ?></td>
+        <td><?php  echo $row->chair_rate ?></td>
+        <td><?php  echo $row->Payment ?></td>
+       
      
-      </tr>
-      <?php
-      $i=0;
-  }
-}
+     
+       
+    </tr>
+<?php 
+    }
     }
 ?>
-</table>
-
+    </table>
   <!-- <div class="col">
     <div class="card">
       <img src="https://www.featherlitefurniture.com/drupal/sites/default/files/pictures/02_Liberate.png" class="card-img-top" alt="...">

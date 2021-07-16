@@ -11,7 +11,7 @@ class LoginModel extends Model
 
     public static function LogData($un,$pw)
     {
-        $sel=DB::table('chair_modellogs')->where(['Name'=>$un,'Password'=>$pw])->get();
+        $sel=DB::table('chair_modellogs')->where(['Email'=>$un,'Password'=>$pw])->get();
         return $sel;
     }
     public static function LogAdmin($un,$pw)

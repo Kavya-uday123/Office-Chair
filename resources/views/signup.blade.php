@@ -36,56 +36,56 @@
                 </tr>
                     <tr>
                         <td>Name</td>
-                        <td><input name="Name" type="text" class="form-control">
+                        <td><input name="Name" value="{{old('Name')}}" type="text" class="form-control" autocomplete=off>
                         <span class="text-danger">@error('Name'){{$message}} @enderror</span>
                         </td>
                     </tr>
                     <tr>
                         <td>Address</td>
-                        <td><input name="Address" type="textarea" class="form-control">
+                        <td><textarea name="Address" type="textarea" class="form-control">{{old('Address')}}</textarea>
                         <span class="text-danger">@error('Address'){{$message}} @enderror</span>
                         </td>
                     </tr>
                     <tr>
                         <td>Pin Code</td>
-                        <td><input name="Pincode" type="text" class="form-control">
+                        <td><input name="Pincode" value="{{old('Pincode')}}" autocomplete=off  type="text" class="form-control">
                         <span class="text-danger">@error('Pincode'){{$message}} @enderror</span>
                         </td>
                     </tr>
                     <tr>
                         <td>State</td>
-                        <td><input name="State" type="text" class="form-control">
+                        <td><input name="State" type="text" value="{{old('State')}}" class="form-control">
                         <span class="text-danger">@error('State'){{$message}} @enderror</span>
                         </td>
                     </tr>
                     <tr>
                         <td>Gender</td>
-                        <td><input name="Gender" type="text" class="form-control">
+                        <td><input name="Gender" type="text" value="{{old('Gender')}}" class="form-control">
                         <span class="text-danger">@error('Gender'){{$message}} @enderror</span>
                         </td>
                     </tr>
                     <tr>
                         <td>Phone</td>
-                        <td><input name="Phone" type="text" class="form-control">
+                        <td><input name="Phone" type="text"  value="{{old('Phone')}}" autocomplete=off  class="form-control">
                         <span class="text-danger">@error('Phone'){{$message}} @enderror</span>
                         </td>
                     </tr>
                     <tr>
                         <td>Email ID</td>
-                        <td><input name="Email" type="text" class="form-control">
+                        <td><input name="Email" type="text"  value="{{old('Email')}}" autocomplete=off  class="form-control">
                         <span class="text-danger">@error('Email'){{$message}} @enderror</span>
                         </td>
                     </tr>
                     <tr>
                         <td>Password</td>
-                        <td><input name="Password" type="password" class="form-control">
+                        <td><input name="Password" type="password"  value="{{old('Password')}}" class="form-control">
                         <span class="text-danger">@error('Password'){{$message}} @enderror</span>
                         </td>
                     </tr>
                     <tr>
                         <td>Confirm Password</td>
-                        <td><input name="ConfirmPassword" type="password" class="form-control">
-                        <span class="text-danger">@error('Confirm Password'){{$message}} @enderror</span>
+                        <td><input name="ConfirmPassword" type="password"  value="{{old('ConfirmPassword')}}" class="form-control">
+                        <span class="text-danger">@error('ConfirmPassword'){{$message}} @enderror</span>
                         </td>
                     </tr>
                     <tr>

@@ -24,11 +24,15 @@
                 </tr>
                     <tr>
                         <td>Username</td>
-                        <td><input type="text" name="Username" class="form-control"></td>
+                        <td><input type="text" value="{{old('Username')}}" name="Username" class="form-control">
+                        <span class="text-danger">@error('Username'){{$errors->first("Username")}} @enderror</span>
+                        </td>
                     </tr>
                     <tr>
                         <td>Password</td>
-                        <td><input type="password" name="Password" class="form-control"></td>
+                        <td><input type="password" value="{{old('password')}}" name="Password" class="form-control"> 
+                        <span class="text-danger">@error('Password'){{$errors->first("Password")}} @enderror</span>
+                        </td>
                     </tr>
                     <tr>
                        <td></td>

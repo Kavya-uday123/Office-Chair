@@ -10,7 +10,7 @@ class ChairModellog extends Model
 {
     public static function CheckData($un)
     {
-        $sel=DB::table('chair_modellogs')->where(['Name'=>$un])->get();
+        $sel=DB::table('chair_modellogs')->where(['Email'=>$un])->get();
         return $sel;
     }
 

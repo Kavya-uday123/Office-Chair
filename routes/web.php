@@ -133,6 +133,7 @@ Route::get('/logout',[LoginController::class,'logout']);
 
 Route::post('/chairadd',[ChairController::class,'InsertChair']);
 Route::get('/chairview',[ChairController::class,'ViewChair']);
+Route::get('/stockview',[ChairController::class,'ViewStock']);
 Route::get('/chairedit',[ChairController::class,'SelectChair']);
 Route::post('/chairedit',[ChairController::class,'UpdateChair']);
 Route::get('/chairedit/{id}',[ChairController::class,'DeleteChair']);
@@ -159,6 +160,7 @@ Route::post('/checkout',[OrderController::class,'InsertOrder']);
 Route::get('/UsersReport',[UserReportController::class,'ViewUsers']);
 
 Route::get('/CompletedOrders',[OrderController::class,'ViewAllOrderDetails']);
+Route::get('/OrderHistory',[OrderController::class,'ViewOrderHistory']);
 
 Route::get('/signup',[ChairControllerlog::class,'create'] );
 Route::post('/signup',[ChairControllerlog::class,'store']);

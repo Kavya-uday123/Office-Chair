@@ -8,6 +8,14 @@ class ChairController extends Controller
 {
     public function InsertChair(Request $req)
     {
+        $req->validate([
+            'cname'=>'required',
+            'cdes'=>'required',
+            'cqty'=>'required|numeric',
+            'crate'=>'required|numeric',
+            'cfile'=>'required',
+            
+        ]);
         $name=$req->cname; 
         $desc=$req->cdes; 
         $qty=$req->cqty;
@@ -19,6 +27,8 @@ class ChairController extends Controller
 
         if(isset($_POST["submit"]))
         {
+            
+
             $inQ=ChairModel::InsertData($name,$desc,$qty,$rate,$photo);
             return redirect('/chairadd');
         }
@@ -28,6 +38,12 @@ class ChairController extends Controller
     {
         $data=ChairModel::GridView();
         return view('/chairview',['data'=>$data]);
+       
+    }
+    public function ViewStock()
+    {
+        $data=ChairModel::GridView();
+        return view('/stockview',['data'=>$data]);
        
     }
 

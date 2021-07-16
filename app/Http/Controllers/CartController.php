@@ -64,7 +64,8 @@ class CartController extends Controller
     {
         $cid=$req->session()->get('cid');
         $data=CartModel::ViewOrder($cid);
-        return view('/checkout',['data'=>$data]);
+        $udata=CartModel::ViewUserDetails($cid);
+        return view('/checkout',['data'=>$data,'udata'=>$udata]);
        
     }
    

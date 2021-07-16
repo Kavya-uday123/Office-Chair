@@ -136,12 +136,14 @@
                             <form class="row contact_form" method="post" novalidate="novalidate">
                             {{ csrf_field() }}
                             <div class="col-md-12 form-group p_star">
-                                    <input type="text" class="form-control" id="name" name="Name" value=""
-                                        placeholder="Username">
+                                    <input type="email" class="form-control" value="{{old('Username')}}" autocomplete=off id="name" name="Username" value=""
+                                        placeholder="Email">
+                                        <span class="text-danger">@error('Username'){{$message}} @enderror</span>
                                 </div>
                                 <div class="col-md-12 form-group p_star">
-                                    <input type="password" class="form-control" id="password" name="Password" value=""
+                                    <input type="password" class="form-control" value="{{old('Password')}}" id="password" name="Password" value=""
                                         placeholder="Password">
+                                        <span class="text-danger">@error('Password'){{$message}} @enderror</span>
                                 </div>
                                 <div class="col-md-12 form-group">
                                     <div class="creat_account d-flex align-items-center">

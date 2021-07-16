@@ -226,12 +226,12 @@ if(isset($data1)){
             <li>
                 <p>Address1</p><span>:<?php  echo $row1->add1?></span>
               </li>
-              <li>
+              <!-- <li>
                 <p>Address2</p><span>:<?php  echo $row1->add2?></span>
-              </li>
+              </li> 
               <li>
                 <p>city</p><span>:<?php  echo $row1->city?></span>
-              </li>
+              </li>-->
               <li>
                 <p>country</p><span>: India</span>
               </li>

@@ -56,27 +56,27 @@
                     
                     <tr>
                         <td>Chair Name</td>
-                        <td><input value="<?php  echo $chair->chair_name ?>" name="cname" type="textarea" class="form-control"></td>
+                        <td><input value="<?php  echo $chair->chair_name ?>" required name="cname" type="textarea" class="form-control"></td>
                         <span class="text-danger">@error('Chair Name'){{$message}} @enderror</span>
                     </tr>
                     <tr>
                         <td>Chair Description</td>
-                        <td><input value="<?php  echo $chair->chair_desc ?>" name="cdes" type="text" class="form-control"></td>
+                        <td><input value="<?php  echo $chair->chair_desc ?>" required name="cdes" type="text" class="form-control"></td>
                         <span class="text-danger">@error('Chair Description'){{$message}} @enderror</span>
                     </tr>
                     <tr>
                         <td>Quantity</td>
-                        <td><input value="<?php  echo $chair->chair_qty ?>" name="cqty" type="text" class="form-control"></td>
+                        <td><input value="<?php  echo $chair->chair_qty ?>" required name="cqty" type="number" class="form-control"></td>
                         <span class="text-danger">@error('Quantity'){{$message}} @enderror</span>
                     </tr>
                     <tr>
                         <td>Rate</td>
-                        <td><input value="<?php  echo $chair->chair_rate ?>" name="crate" type="text" class="form-control"></td>
+                        <td><input value="<?php  echo $chair->chair_rate ?>" required name="crate" type="number" class="form-control"></td>
                         <span class="text-danger">@error('Rate'){{$message}} @enderror</span>
                     </tr>
                     <tr>
                     <td>Image</td><input name="hfile" type="hidden" value="<?php  echo $chair->chair_img ?>" >
-                        <td><input name="cfile" type="file" class="custom-file-input"<?php  echo $chair->chair_img ?>>
+                        <td><input name="cfile" type="file" required class="custom-file-input"<?php  echo $chair->chair_img ?>>
                         <label class="custom-file-label"></label>
                     </tr> 
                     <tr>

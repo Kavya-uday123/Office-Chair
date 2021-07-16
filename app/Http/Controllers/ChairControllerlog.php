@@ -44,8 +44,30 @@ class ChairControllerlog extends Controller
         $getPassword=request("Password");
         $getConfirmPassword=request("ConfirmPassword");
 
+        $request->validate([
+            'Name'=>'required',
+            'Address'=>'required',
+            'Pincode'=>'required',
+            'State'=>'required',
+            'Gender'=>'required',
+            'Phone'=>'required|numeric|min:10',
+            'Email'=>'required|email|',
+            'Password'=>'required|min:5|max:15',
+            'ConfirmPassword'=>'required|min:5|max:15'
+        ]);
+        $log=ChairModellog::CheckData($getEmail);
+
+        if(count($log)>0)
+        {
+            ?>
+                <script type="text/javascript">
+                            alert("Username/Email Already Exist..");
+                            setTimeout(function(){window.location.href='/signup'},100);
+                        </script>
+       <?php
+        }
        
-                    if($getPassword==$getConfirmPassword)
+                else if($getPassword==$getConfirmPassword)
                     {
                      $log=ChairModellog::InsertData($getName,$getAddress,$getPincode,$getState,$getGender,$getPhone,$getEmail,$getPassword,$getConfirmPassword);
                         ?>
@@ -62,6 +84,7 @@ class ChairControllerlog extends Controller
                     </script>
                      <?php
                     }
+            
             
     }
   
