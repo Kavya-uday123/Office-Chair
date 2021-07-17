@@ -71,7 +71,14 @@ class ChairController extends Controller
     {
         if(isset($_GET["editid"]))
         $editid=$_GET["editid"];
-
+        $req->validate([
+            'cname'=>'required',
+            'cdes'=>'required',
+            'cqty'=>'required|numeric',
+            'crate'=>'required|numeric',
+            'cfile'=>'required',
+            
+        ]);
         $name=$req->cname; 
         $desc=$req->cdes; 
         $qty=$req->cqty;

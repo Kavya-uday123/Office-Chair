@@ -77,6 +77,7 @@
                             </ul>
              
                         </div>
+                        
                         <!--<div class="hearer_icon d-flex">
                             <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
                             <a href=""><i class="ti-heart"></i></a>
@@ -89,7 +90,7 @@
                                     <div class="single_product">
     
                                     </div>
-                                </div> -->
+                                </div> 
                                 
                             </div>
                         </div>
@@ -105,7 +106,7 @@
                     <span class="ti-close" id="close_search" title="Close Search"></span>
                 </form>
             </div>
-        </div>
+        </div>-->
     </header>
     <!-- Header part end-->
 
