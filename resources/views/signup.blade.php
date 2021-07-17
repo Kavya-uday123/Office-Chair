@@ -66,7 +66,7 @@
                     </tr>
                     <tr>
                         <td>Phone</td>
-                        <td><input name="Phone" type="text"  value="{{old('Phone')}}" autocomplete=off  class="form-control">
+                        <td><input name="Phone" type="text"  value="{{old('Phone')}}" autocomplete=off max=10  class="form-control">
                         <span class="text-danger">@error('Phone'){{$message}} @enderror</span>
                         </td>
                     </tr>
