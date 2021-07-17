@@ -153,8 +153,8 @@ function cartinsert(itemid,j)
                     <span class="ti-close" id="close_search" title="Close Search"></span>
                 </form>
             </div>
-        </div>
-    </header>-->
+        </div>-->
+    </header>
     <!-- Header part end-->
 
     <!--================Home Banner Area =================-->
