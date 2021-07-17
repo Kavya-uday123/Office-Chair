@@ -99,14 +99,14 @@ function cartinsert(itemid,j)
                                     <div class="single_product">
     
                                     </div>
-                                </div> -->
+                                </div> 
                                 
                             </div>
                         </div>
                     </nav>
                 </div>
             </div>
-        </div>
+        </div>-->
       
     </header>
     <!-- Header part end-->

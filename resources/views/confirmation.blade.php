@@ -130,7 +130,7 @@
                                     <div class="single_product">
     
                                     </div>
-                                </div> -->
+                                </div> 
                                 
                             </div>
                         </div>
@@ -147,7 +147,7 @@
                 <span class="ti-close" id="close_search" title="Close Search"></span>
             </form>
         </div>
-    </div>
+    </div>-->
 </header>
   <!-- Header part end-->
 
