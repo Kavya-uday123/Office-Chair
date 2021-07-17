@@ -47,7 +47,7 @@ class ChairControllerlog extends Controller
         $request->validate([
             'Name'=>'required',
             'Address'=>'required',
-            'Pincode'=>'required',
+            'Pincode'=>'required|numeric',
             'State'=>'required',
             'Gender'=>'required',
             'Phone'=>'required|numeric|min:10',
