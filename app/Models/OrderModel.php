@@ -39,12 +39,13 @@ class OrderModel extends Model
         return $sel;
     }
 
-    public static function ViewAllOrderDetails()
+    public static function ViewAllOrderDetails($fDate,$eDate)
     {
     $sel=DB::table('tbl_order_child')
                   ->join('tbl_order_master','tbl_order_master.om_id','=','tbl_order_child.om_id')
                   ->join('tbl_chair','tbl_chair.chair_id','=','tbl_order_master.chair_id')
                   ->join('chair_modellogs','chair_modellogs.id','=','tbl_order_master.cust_id')
+                  ->whereBetween('o_date', [$fDate, $eDate])
                   ->where('status','=',1)
                   ->get();
         return $sel;
@@ -60,4 +61,5 @@ class OrderModel extends Model
         return $sel;
     }
 }
+
 

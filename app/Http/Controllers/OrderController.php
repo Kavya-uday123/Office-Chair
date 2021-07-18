@@ -31,6 +31,36 @@ class OrderController extends Controller
             $inQ=OrderModel::InsertOrder($name,$number,$email,$add1,$add2,$city,$zip,$message,$cid,$no);
           
             $upQ=CartModel::UpdatePay($cid);
+          
+           $dat=OrderModel::ViewBill($cid);
+           if(isset($dat))
+           {
+               foreach($dat as $dat1)
+               {
+                   $no=$dat1->no;
+               }
+           }
+           $sel=CartModel::ViewOrderQuantity($cid,$no);
+       
+            if(count($sel)>0){
+                foreach ($sel as $row){
+
+                    $qty=$row->o_qty;
+                    $chairid=$row->chair_id;
+
+                  
+                    $tqty=DB::table('tbl_chair')->where('chair_id','=',$chairid)->get();
+                    if(count($tqty)>0){
+                        foreach ($tqty as $row1){
+
+                    $totqty=$row1->chair_qty;        
+                    $bqty=$totqty-$qty;
+            
+                    $up=DB::table('tbl_chair')->where('chair_id','=',$chairid)->update(['chair_qty'=>$bqty]);
+
+                        }}
+                }
+            }
            // return redirect('/chairview');
            ?>
          <script type="text/javascript">
@@ -62,11 +92,19 @@ class OrderController extends Controller
        
     }
 
-    public function ViewAllOrderDetails()
+    public function ViewAllOrderDetails(Request $req)
     {
-       
-        $data=OrderModel::ViewAllOrderDetails();
-        return view('/CompletedOrders',['data'=>$data]);
+        if(isset($_POST["btnsave"]))
+        {
+
+                  
+        $fdate=$req->inputefdate;
+        $edate=$req->inputesdate;
+
+        $data=OrderModel::ViewAllOrderDetails($fdate,$edate);
+
+        return view('/CompletedOrders',['data'=>$data,'fdate'=>$fdate,'edate'=>$edate]);
+        }
        
     }
     public function ViewOrderHistory(Request $req,$cid=null)

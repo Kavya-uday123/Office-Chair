@@ -42,15 +42,49 @@
           </div>
         </div>
       </nav>
-      <br> <br> <br>
-<br> <div id="divToPrint">
+      <br> 
 
+<br>
+<h2 align="center" style="color:grey">Completed Order List</h2>
+      <form method="post" >
+
+{{ csrf_field() }}
+<table align="center" style="background-color:#C0C0C0;width:45%;border:1px solid black;margin-left:360px">
+<tr><td>
+
+    <label for="inputefdate" class="form-label">From Date</label></td>
+    <td><input type="date"  name="inputefdate" id="inputefdate"></td>
+  </tr>
+  <tr>
+  <td>
+    <label for="inputesdate" class="form-label">To Date</label></td>
+   <td> <input type="date"  name="inputesdate" id="inputesdate"></td>
+  </tr>
+  
+
+
+
+  <tr class="col-12">
+  <td colspan="2" align="center">
+    <button type="submit" class="btn btn-primary" name="btnsave">View</button>
+</td>
+
+  </tr>
+</table>
+</form>
+     
+ 
   
     <!-- <div class="container">
         <div class="row"> -->
-        <h2 align="center" style="color:grey">Completed Order List</h2>
+        <div id="divToPrint">
+        <?php  if(isset($data))
+    { ?>
+        <h2 align="center" style="color:grey">Order List</h2>
+       
             <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"> -->
             <table class="table" style="background-color:#C0C0C0;width:95%;border:1px solid black;margin-left:30px"  >
+    <tr><td colspan="12"> <h6>From Date:<?php if(isset($fdate)) { echo $fdate; } ?> - To Date:<?php if(isset($edate)) { echo $edate ;} ?></h6></td></tr>
     <tr>
         <th>Sl.No</th>
         <th>Order Date</th>
@@ -66,8 +100,7 @@
         <th>State</th>
        
     </tr>
-    <?php if(isset($data))
-    {
+    <?php
         $i=0;
     foreach($data as $row)
     { $i++;
@@ -91,18 +124,24 @@
     </tr>
 <?php 
     }
-    }
+    
 ?>
     </table>
 
+   
+    </div>
             <!-- </div> -->
-          
-            <!-- <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3"></div>
+<!--           
+            <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3"></div>
         </div>
     </div>   -->
-</div>
+
     
     <center> <input type="button" value="print" onclick="PrintDiv();" /></center>
+
+    <?php 
+    
+  }
+?>
 </body>
 </html>
-

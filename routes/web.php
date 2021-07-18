@@ -104,7 +104,9 @@ Route::get('/payment', function () {
     return view('payment');
 });
 
-
+Route::get('/CompletedOrders', function () {
+    return view('CompletedOrders');
+});
 
 route::post('/auth/save',[ChairControllerlog::class,'save'])->name('auth.save');
 Route::get('/auth/login', [ChairControllerlog::class,'login'])->name('auth.login'); 
@@ -159,7 +161,7 @@ Route::post('/checkout',[OrderController::class,'InsertOrder']);
 
 Route::get('/UsersReport',[UserReportController::class,'ViewUsers']);
 
-Route::get('/CompletedOrders',[OrderController::class,'ViewAllOrderDetails']);
+Route::post('/CompletedOrders',[OrderController::class,'ViewAllOrderDetails']);
 Route::get('/OrderHistory',[OrderController::class,'ViewOrderHistory']);
 
 Route::get('/signup',[ChairControllerlog::class,'create'] );
