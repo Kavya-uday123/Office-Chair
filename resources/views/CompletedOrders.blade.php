@@ -66,6 +66,7 @@
 
   <tr class="col-12">
   <td colspan="2" align="center">
+    <br>
     <button type="submit" class="btn btn-primary" name="btnsave">View</button>
 </td>
 
@@ -80,6 +81,8 @@
         <div id="divToPrint">
         <?php  if(isset($data))
     { ?>
+    <br>
+    <br>
         <h2 align="center" style="color:grey">Order List</h2>
        
             <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"> -->
