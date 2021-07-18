@@ -47,13 +47,13 @@ class ChairControllerlog extends Controller
         $request->validate([
             'Name'=>'required',
             'Address'=>'required',
-            'Pincode'=>'required|numeric|',
+            'Pincode'=>'required|numeric',
             'State'=>'required',
             'Gender'=>'required',
-            'Phone'=>'required|numeric|min:10|',
+            'Phone'=>'required|numeric|min:10',
             'Email'=>'required|email|',
-            'Password'=>'required|min:5|max:15|',
-            'ConfirmPassword'=>'required|min:5|max:15|'
+            'Password'=>'required|min:5|max:15',
+            'ConfirmPassword'=>'required|min:5|max:15'
         ]);
         $log=ChairModellog::CheckData($getEmail);
 
