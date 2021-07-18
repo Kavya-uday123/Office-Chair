@@ -45,19 +45,19 @@
       <br> 
 
 <br>
-<h2 align="center" style="color:grey">Completed Order List</h2>
+<h2 align="center" style="color:grey">Select Date</h2>
       <form method="post" >
 
 {{ csrf_field() }}
 <table align="center" style="background-color:#C0C0C0;width:45%;border:1px solid black;margin-left:360px">
 <tr><td>
-
-    <label for="inputefdate" class="form-label">From Date</label></td>
+<br>
+    <label for="inputefdate" class="form-label">   From Date</label></td>
     <td><input type="date"  name="inputefdate" id="inputefdate"></td>
   </tr>
   <tr>
   <td>
-    <label for="inputesdate" class="form-label">To Date</label></td>
+    <label for="inputesdate" class="form-label">   To Date</label></td>
    <td> <input type="date"  name="inputesdate" id="inputesdate"></td>
   </tr>
   
@@ -71,6 +71,7 @@
 </td>
 
   </tr>
+  <br>
 </table>
 </form>
      
