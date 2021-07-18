@@ -31,40 +31,10 @@ class OrderController extends Controller
             $inQ=OrderModel::InsertOrder($name,$number,$email,$add1,$add2,$city,$zip,$message,$cid,$no);
           
             $upQ=CartModel::UpdatePay($cid);
-          
-           $dat=OrderModel::ViewBill($cid);
-           if(isset($dat))
-           {
-               foreach($dat as $dat1)
-               {
-                   $no=$dat1->no;
-               }
-           }
-           $sel=CartModel::ViewOrderQuantity($cid,$no);
-       
-            if(count($sel)>0){
-                foreach ($sel as $row){
-
-                    $qty=$row->o_qty;
-                    $chairid=$row->chair_id;
-
-                  
-                    $tqty=DB::table('tbl_chair')->where('chair_id','=',$chairid)->get();
-                    if(count($tqty)>0){
-                        foreach ($tqty as $row1){
-
-                    $totqty=$row1->chair_qty;        
-                    $bqty=$totqty-$qty;
-            
-                    $up=DB::table('tbl_chair')->where('chair_id','=',$chairid)->update(['chair_qty'=>$bqty]);
-
-                        }}
-                }
-            }
            // return redirect('/chairview');
            ?>
          <script type="text/javascript">
-         alert("Paid Successfully..");
+         alert("Payed Successfully..");
          setTimeout(function(){window.location.href='/confirmation'},100);
      </script>
    <?php
