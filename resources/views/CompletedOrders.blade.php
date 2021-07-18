@@ -85,6 +85,8 @@
             <!-- <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6"> -->
             <table class="table" style="background-color:#C0C0C0;width:95%;border:1px solid black;margin-left:30px"  >
     <tr><td colspan="12"> <h6>From Date:<?php if(isset($fdate)) { echo $fdate; } ?> - To Date:<?php if(isset($edate)) { echo $edate ;} ?></h6></td></tr>
+    <br>
+    <br>
     <tr>
         <th>Sl.No</th>
         <th>Order Date</th>
