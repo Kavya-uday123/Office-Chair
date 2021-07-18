@@ -64,7 +64,7 @@ class OrderController extends Controller
            // return redirect('/chairview');
            ?>
          <script type="text/javascript">
-         alert("Payed Successfully..");
+         alert("Paid Successfully..");
          setTimeout(function(){window.location.href='/confirmation'},100);
      </script>
    <?php
