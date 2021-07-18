@@ -392,12 +392,12 @@
               <div class="col-md-12 form-group">
                 Pincode<input type="text" class="form-control" required id="zip" name="zip" value="<?php echo $urow->Pincode ?>" placeholder="Postcode/ZIP" />
               </div>
-              <div class="col-md-12 form-group">
+              <!--<div class="col-md-12 form-group">
                 <div class="creat_account">
                   <input type="checkbox" id="f-option2" name="selector" />
                   <label for="f-option2">Create an account?</label>
                 </div>
-              </div>
+              </div>-->
               <div class="col-md-12 form-group">
                 <div class="creat_account">
                   <h3>Shipping Details</h3>
