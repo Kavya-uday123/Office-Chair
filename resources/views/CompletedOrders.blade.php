@@ -52,12 +52,12 @@
 <table align="center" style="background-color:#C0C0C0;width:45%;border:1px solid black;margin-left:360px">
 <tr><td>
 <br>
-    <label for="inputefdate" class="form-label">   From Date</label></td>
+    <label for="inputefdate" class="form-label">&nbsp&nbsp&nbspFrom Date</label></td>
     <td><input type="date"  name="inputefdate" id="inputefdate"></td>
   </tr>
   <tr>
   <td>
-    <label for="inputesdate" class="form-label">   To Date</label></td>
+    <label for="inputesdate" class="form-label">&nbsp&nbsp&nbspTo Date</label></td>
    <td> <input type="date"  name="inputesdate" id="inputesdate"></td>
   </tr>
   
@@ -68,10 +68,11 @@
   <td colspan="2" align="center">
     <br>
     <button type="submit" class="btn btn-primary" name="btnsave">View</button>
+    <br>
 </td>
 
   </tr>
-  <br>
+ 
 </table>
 </form>
      
