@@ -50,7 +50,7 @@ class ChairControllerlog extends Controller
             'Pincode'=>'required|numeric',
             'State'=>'required',
             'Gender'=>'required',
-            'Phone'=>'required|numeric|min:10',
+            'Phone'=>'required|numeric|digits:10',
             'Email'=>'required|email|',
             'Password'=>'required|min:5|max:15',
             'ConfirmPassword'=>'required|min:5|max:15'
