@@ -29,7 +29,7 @@
     {{ Session::get('Fail')}}
     </div>
     @endif
-    @csrf
+    {{ csrf_field() }}
                 <table class="table" style="background-color:#C0C0C0">
                 <tr>
                     <th><h4 align="center" style="color:black">Sign Up</h4></th>
